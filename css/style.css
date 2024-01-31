@@ -40,7 +40,8 @@ body.container-fluid {
 }
 
 .navbar-title {
-  margin-right: 50rem;
+  width: 100%;
+  margin-left: 2rem;
 }
 
 /*Banner principal*/
