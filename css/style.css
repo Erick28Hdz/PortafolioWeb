@@ -53,11 +53,11 @@ section .hero {
 }
 
 #hero {
-  background-image: url(/images/Portadas/smart-4308821_1920.jpg);
+  background-image: url(images/Portadas/smart-4308821_1920.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  height: 72vh;
+  height: 70vh;
 }
 
 h1 {
@@ -568,6 +568,24 @@ b {
   font-family: var(--letra-botones);
 }
 
+.subtitulo {
+  width: 100%;
+  text-align: center;
+  font-size: var(--subtitulos);
+  color: var(--color-primary);
+  letter-spacing: 3px;
+  font-family: var(--letra-principal);
+  text-shadow: 3px 6px 8px var(--color-accent);
+  z-index: 1;
+}
+
+.subtitulo b {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3px auto;
+  border-radius: none;
+}
 /*Menu*/
 .menu-principal {
   width: 100%;
@@ -666,25 +684,6 @@ b {
   align-items: center;
   margin: 10px auto;
   bottom: 5px;
-}
-
-.subtitulo {
-  width: 100%;
-  text-align: center;
-  font-size: var(--subtitulos);
-  color: var(--color-primary);
-  letter-spacing: 3px;
-  font-family: var(--letra-principal);
-  text-shadow: 3px 6px 8px var(--color-secondary);
-  z-index: 1;
-}
-
-.subtitulo b {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: none;
 }
 
 .contenedor-descripcion {
