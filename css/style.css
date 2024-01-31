@@ -52,12 +52,12 @@ section .hero {
   align-items: center;
 }
 
-.img-hero {
+#hero {
   background-image: url(/images/Portadas/smart-4308821_1920.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  height: 70vh;
+  height: 72vh;
 }
 
 h1 {
