@@ -53,7 +53,7 @@ section .hero {
 }
 
 #hero {
-  background-image: url(images/Portadas/smart-4308821_1920.jpg);
+  background-image: url(./src/assets/images/Portadas/smart-4308821_1920.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
