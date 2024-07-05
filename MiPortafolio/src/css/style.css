@@ -57,7 +57,7 @@ section .hero {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  height: 70vh;
+  height: auto;
 }
 
 h1 {
