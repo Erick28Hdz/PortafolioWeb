@@ -19,137 +19,143 @@
 </head>
 
 <body class="container-fluid">
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-nav">
-              <img class="logo-nav" src="MiPortafolio/src/assets/images/Logos/logo personal/logo-no-background.svg" alt="">
-              <a class="navbar-brand navbar-title"><b>Mi Portafolio Web</b></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
-              aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú principal</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
+  <!--Sección del encabezado principal-->
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-nav">
+        <img class="logo-nav" src="MiPortafolio/src/assets/images/Logos/logo personal/logo-no-background.svg" alt="">
+        <a class="navbar-brand navbar-title"><b>Mi Portafolio Web</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Contenido del navbar-->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú principal</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!--Lista desplegable del contenido del navbar-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#titulo-estudios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#titulo-estudios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Estudios profesionales
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#titulo-pregrado">Pregrado</a></li>
-                        <li><a class="dropdown-item" href="#titulo-pregrado">Postgrado</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#titulo-cursos">Otros cursos</a></li>
-                      </ul>
-                      <a class="nav-link dropdown-toggle" href="#titulos-habilidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#titulo-pregrado">Pregrado</a></li>
+                  <li><a class="dropdown-item" href="#titulo-pregrado">Postgrado</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#titulo-cursos">Otros cursos</a></li>
+                </ul>
+                <a class="nav-link dropdown-toggle" href="#titulos-habilidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Habilidades
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#habilidades-profesionales">Habilidades profesionales</a></li>
-                      </ul>
-                      <a class="nav-link dropdown-toggle" href="#titulo-experiencia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Experiencia laboral
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#habilidades-profesionales">Habilidades profesionales</a></li>
+                </ul>
+                <a class="nav-link dropdown-toggle" href="#titulo-experiencia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Experiencia laboral
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="#titulocontratos">Contrato</a></li>
                         <li><a class="dropdown-item" href="#titulofreelance">Freelance</a></li>
-                        <li><a class="dropdown-item" href="#tituloindependiente">Independiente</a></li>
-                        
-                      </ul>
-                      <a class="nav-link dropdown-toggle" href="#titulo-proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li><a class="dropdown-item" href="#tituloindependiente">Independiente</a></li> 
+                </ul>
+                <a class="nav-link dropdown-toggle" href="#titulo-proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Proyectos
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="#tituloterminados">Terminados</a></li>
                         <li><a class="dropdown-item" href="#tituloproceso">En Proceso</a></li>
                         <li><a class="dropdown-item" href="#tituloinvestigacion">De Investigación</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contactos">Contacto</a>
-                    </li>
-                  </ul>
-                  </div>
-              </div>
-            </div>
-          </nav>
-            <section id="hero"> 
-              <div class="container-hero">
-                <h1 id="Inicio" class="titulo">Erik Darney Hernandez Torres</h1>
-                <div class="hero-content">  
-                  <div class="perfil col-lg-4 col-md-6">
-                    <img src="MiPortafolio/src/assets/images/perfil/WhatsApp Image 2024-01-17 at 21.00.46.jpeg" alt="" class="foto" download="none">
-                  </div>
-                  <div class="descripcion col-lg-4 col-md-6">
-                    <div class="button">
-                      <a href="#">HOJA DE VIDA</a>
-                      <b class="top">Click para descargar</b>
-                      <b class="bottom">1.2MB .zip</b>
-                    </div>
-                  </div>
-                <section class="seccion-informacion">
-                  <div class="informacion col-lg-4 col-md-12">
-                    <img src="MiPortafolio/src/assets/images/Logos/logo personal/logo-no-background.svg" alt="" class="Logo">
-                    <div class="inf-principal">
-                    <h5 class="card__title">Analísta y desarrollador de Software</h5>
-                    <p class="card__description">Aprendiz en ciberseguridad</p>
-                    <p class="card__description">Aprendiz en Inteligencia artificial</p>
-                    <p class="card__description">Colombia, Bogotá D.C.</p>
-                  </div>
-                  </div>
-                  <div class="btn-group" role="group">
-                  <div class="card-buton">
-                    <span>REDES SOCIALES</span>
-                    <a class="social-link" href="https://github.com/Erick28Hdz">
-                      <img src="MiPortafolio/src/assets/images/Iconos/Github.png" alt="">
-                    </a>
-                    <a class="social-link" href="https://www.facebook.com/todocomienza.erickhernandez/">
-                      <img src="MiPortafolio/src/assets/images/Iconos/Facebook.png" alt="">
-                    </a>
-                    <a class="social-link" href="https://www.instagram.com/erck.hernandez/">
-                      <img src="MiPortafolio/src/assets/images/Iconos/Instagram.png" alt="">
-                    </a>
-                    <a class="social-link" href="https://www.tiktok.com/@erickhdz9628">
-                      <img src="MiPortafolio/src/assets/images/Iconos/Tik-tok.png" alt="">
-                  </div>
-                  <div class="card-buton2">
-                    <span>CONTACTO</span>
-                    <a class="social-link2" href="https://www.linkedin.com/in/erick-hernandez-a9b6aa207/">
-                      <img src="images/Iconos/linkedin1.png" alt="">
-                    </a>
-                    <a class="social-link2" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLfpjRFLdRpNPPBcFlCxFMdxhlfbWlshWCfLkhcmVxXVJBKtBkBSVhkJGgvBzcDpVBZL">
-                      <img src="images/Iconos/gmail1.png" alt="">
-                    </a>
-                    <a class="social-link2" href="https://wa.me/573022016072">
-                      <img src="MiPortafolio/src/assets/images/Iconos/whatsapp1.png" alt="">
-                    </a>
-                  </div>
-                </div> 
-                </section>
-                </div>
-              </div>
-              <p class="animate__animated animate__bounce subtitulo" ><b>Bienvenidx a mi Portafolio digital Web</b></p>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactos">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero"> 
+      <div class="container-hero contenedores-hero">       
+        <section class="seccion-informacion">
+          <div class="informacion col-lg-4 col-md-12">
+            <img src="MiPortafolio/src/assets/images/Logos/logo personal/logo-no-background.svg" alt="" class="Logo">
+            <div class="inf-principal">
+            <h5 class="card__title">Analísta y desarrollador de Software</h5>
+            <p class="card__description">Aprendiz en ciberseguridad</p>
+            <p class="card__description">Aprendiz en Inteligencia artificial</p>
+            <p class="card__description">Colombia, Bogotá D.C.</p>
+          </div>
+          </div>
+          <div class="btn-group" role="group">
+          <div class="card-buton">
+            <span>REDES SOCIALES</span>
+            <a class="social-link" href="https://github.com/Erick28Hdz">
+              <img src="MiPortafolio/src/assets/images/Iconos/github1.png" alt="">
+            </a>
+            <a class="social-link" href="https://www.facebook.com/todocomienza.erickhernandez/">
+              <img src="MiPortafolio/src/assets/images/Iconos/facebook1.png" alt="">
+            </a>
+            <a class="social-link" href="https://www.instagram.com/erck.hernandez/">
+              <img src="MiPortafolio/src/assets/images/Iconos/instagram1.png" alt="">
+            </a>
+            <a class="social-link" href="https://www.tiktok.com/@erickhdz9628">
+              <img src="MiPortafolio/src/assets/images/Iconos/tik-tok1.png" alt="">
+          </div>
+          <div class="card-buton2">
+            <span>CONTACTO</span>
+            <a class="social-link2" href="https://www.linkedin.com/in/erick-hernandez-a9b6aa207/">
+              <img src="MiPortafolio/src/assets/images/Iconos/linkedin1.png" alt="">
+            </a>
+            <a class="social-link2" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNsLfpjRFLdRpNPPBcFlCxFMdxhlfbWlshWCfLkhcmVxXVJBKtBkBSVhkJGgvBzcDpVBZL">
+              <img src="MiPortafolio/src/assets/images/Iconos/gmail1.png" alt="">
+            </a>
+            <a class="social-link2" href="https://wa.me/573022016072">
+              <img src="MiPortafolio/src/assets/images/Iconos/whatsapp1.png" alt="">
+            </a>
+          </div>
+        </div> 
         </section>
-    </header>
-    
-    <main class="menu-principal">
-      <div class="container">
+        <section class="seccion-principal">
+          <div>
+            <h1 id="Inicio">Erik Darney Hernandez Torres</h1>
+          </div>
+          <div class="perfil col-lg-4 col-md-6">
+            <img src="MiPortafolio/src/assets/images/perfil/WhatsApp Image 2024-01-17 at 21.00.46.jpeg" alt="" class="foto" download="none">
+          </div>
+          <div>
+            <p class="animate__animated animate__bounce subtitulo" ><b>Bienvenidx a mi Portafolio digital Web</b></p>
+          </div>
+        </section>
+        <section class="seccion-avatar">          
+          <div class="button">
+              <a href="#">HOJA DE VIDA</a>
+              <b class="top">Click para descargar</b>
+              <b class="bottom">1.2MB .zip</b>
+          </div>
+        </section>      
+      </div> 
+    </section>
+  </header>
+  <!--Sección del menú principal-->
+  <main class="menu-principal">
+    <div class="container">
         <div class="nav-botones">
           <a href="#estudios-profesionales" class="botones">Estudios</a>
           <a href="#habilidades-profesionales" class="botones">Habilidades</a>
           <a href="#Experiencia-laboral" class="botones">Experiencia</a>
           <a href="#titulo-proyectos" class="botones">Proyectos</a>
         </div>
-      </div>
+    </div>
       <hr class="barra-des">
       <section class="contenedor-descripcion">
         <div class="container" data-aos="zoom-in-up" data-aos-duration="1000"> 
@@ -1435,10 +1441,9 @@
             </div>
           </div>
         </section>
-    </main>
-    
-    <!-- Sección del footer -->
-    <footer id="contactos">
+  </main>  
+  <!-- Sección del footer -->
+  <footer id="contactos">
       <div class="container enlaces-footer">
                 <a class="logo1" href="https://www.facebook.com/todocomienza.erickhernandez/"><img src="images/Iconos/Facebook.png" alt="Facebook"></a>
                 <a class="logo2" href="https://www.instagram.com/erck.hernandez/"><img src="images/Iconos/Instagram.png" alt="Instagram"></a>
@@ -1453,7 +1458,7 @@
         <p class="año">2024</p>
       </div>     
                
-    </footer>
+  </footer>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

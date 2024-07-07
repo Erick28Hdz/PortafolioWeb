@@ -52,6 +52,12 @@ section .hero {
   align-items: center;
 }
 
+.contenedores-hero {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
 #hero {
   background-image: url(../assets/images/Portadas/smart-4308821_1920.jpg);
   background-size: cover;
@@ -60,19 +66,24 @@ section .hero {
   height: auto;
 }
 
+.seccion-informacion, .seccion-principal, .seccion-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+/*Sección principal del hero*/
 h1 {
   letter-spacing: 4px;
-  position: relative;
-  top: 20px;
   text-shadow: -2px -3px 1px var(--color-primary);
   margin-bottom: 20px;
-  justify-items: center;
-  color: var(--color-background);
   text-align: center;
+  color: var(--color-background);
   font-family: var(--letra-principal);
-  padding-top: 3rem;
+  padding-top: 4rem;
   -webkit-text-stroke: 2px var(--color-secondary); /* Contorno usando la propiedad -webkit-text-stroke */
-  text-stroke: 2px var(--color-secondary); /* Contorno para navegadores que no requieren el prefijo -webkit- */
 }
 
 h1:hover {
@@ -81,23 +92,13 @@ h1:hover {
   scale: 1.1;
 }
 
-.hero-content {
-  display: flex;
-  align-items: center;
-}
-
 .perfil {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  order: 2;
-  padding: 10px;
+  width: 100%;
   margin: 10px;
 }
 
 .foto {
-  height: 300px;
+  height: 350px;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
@@ -106,22 +107,23 @@ h1:hover {
   box-shadow: 1px 10px 32px -1.5px var(--color-background);
 }
 
-/*Seccióin de descripción*/
-.descripcion {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  order: 3;
-  height: 36vh;
-  margin: 20px auto;
+.subtitulo {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: var(--subtitulos);
+  color: var(--color-primary);
+  letter-spacing: 3px;
+  font-family: var(--letra-principal);
+  text-shadow: 3px 6px 8px var(--color-accent);
+  z-index: 1;
 }
 
+/*Seccióin de descripción*/
 .button {
-  position: relative;
-  top: 16rem;
-  left: 15%;
   transform: translate(-50%, -50%);
+  width: 25%;
+  height: 10px;
 }
 
 .button a {
@@ -229,17 +231,8 @@ b {
 .button:active .top {
   margin: -70px 0 0 10px;
 }
-/*Sección información*/
-.seccion-informacion {
-  width: 30%;
-  position: relative;
-  left: 20px;
-  height: 40vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
+/*Sección información*/
 .informacion {
   position: relative;
   width: 300px;
@@ -568,24 +561,6 @@ b {
   font-family: var(--letra-botones);
 }
 
-.subtitulo {
-  width: 100%;
-  text-align: center;
-  font-size: var(--subtitulos);
-  color: var(--color-primary);
-  letter-spacing: 3px;
-  font-family: var(--letra-principal);
-  text-shadow: 3px 6px 8px var(--color-accent);
-  z-index: 1;
-}
-
-.subtitulo b {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 3px auto;
-  border-radius: none;
-}
 /*Menu*/
 .menu-principal {
   width: 100%;
