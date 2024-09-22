@@ -1,147 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="MiPortafolio/src/assets/images/Logos/logo personal/logo-white.svg" type="image/svg">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@1,100&family=Montserrat&family=New+Rocker&family=Raleway&family=Roboto:wght@700&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="MiPortafolio/src/css/style.css">
-        <title>Experiencia personal</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="../assets/images/Logos/logo personal/logo-white.svg" type="image/svg">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@1,100&family=Montserrat&family=New+Rocker&family=Raleway&family=Roboto:wght@700&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/Habilidades.css">
+      <title>Experiencia personal</title>
     </head>
 <body>
-    
-</body>
-</html>
-
-<h2 id="Experiencia-laboral" data-aos="fade-right"
+  <body>
+    <!-- Sección de header -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-nav">
+          <img class="logo-nav" src="../assets/images/Logos/logo personal/logo-no-background.svg" alt="">
+          <a class="navbar-brand navbar-title"><b>Mi Portafolio Web</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Contenido del navbar-->
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú principal</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!--Lista desplegable del contenido del navbar-->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/MiPortafolio/src/Pages/Estudio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Estudios profesionales
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="MiPortafolio/src/Pages/Estudio.html">Pregrado</a></li>
+                    <li><a class="dropdown-item" href="#titulo-pregrado">Postgrado</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#titulo-cursos">Otros cursos</a></li>
+                  </ul>
+                  <a class="nav-link dropdown-toggle" href="#titulos-habilidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Habilidades
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./MiPortafolio/src/Pages/Habilidades.html">Habilidades profesionales</a></li>
+                  </ul>
+                  <a class="nav-link dropdown-toggle" href="#titulo-experiencia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Experiencia laboral
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#titulocontratos">Contrato</a></li>
+                          <li><a class="dropdown-item" href="#titulofreelance">Freelance</a></li>
+                          <li><a class="dropdown-item" href="#tituloindependiente">Independiente</a></li> 
+                  </ul>
+                  <a class="nav-link dropdown-toggle" href="#titulo-proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Proyectos
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#tituloterminados">Terminados</a></li>
+                          <li><a class="dropdown-item" href="#tituloproceso">En Proceso</a></li>
+                          <li><a class="dropdown-item" href="#tituloinvestigacion">De Investigación</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactos">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Sección de main -->
+  <main>
+    <h2 id="Experiencia-laboral" data-aos="fade-right"
             data-aos-offset="350"
             data-aos-easing="ease-in-sine"><b>Experiencia laboral</b></h2>
-<section class="contenedor-experiencia" data-aos="zoom-in-up" data-aos-duration="2000"> 
-    <div class="container">
-      <div class="Experiencia">
-        <div>
-        <h3 id="titulocontratos">Contratos</h3></div>
-        <div class="sec-contr">
-        <div class="row-cartas">
-          <div class="cartas-col-12">
+    <section class="contenedor-experiencia" data-aos="zoom-in-up" data-aos-duration="2000"> 
+      <div class="container">
+        <div class="Experiencia">
+          <div>
+          <h3 id="titulocontratos">Contratos</h3></div>
+          <div class="sec-contr">
+          <div class="row-cartas">
+            <div class="cartas-col-12">
+                <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Instalar Security System</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
+                      <p class="card-text">Realizar instalación de cámaras de seguridad, alarmas de seguridad 
+                        y programar el sistema de seguridad; también, realizar prevención.</p>
+                      <p class="card-fecha">Agosto 2016 - Mayo 2017</p>  
+                      <p class="parrafoexpe">10 meses</p>
+                      <p class="parrafolugar">Colombia - Bogotá</p>
+                    </div>
+                  </div>
+                </article>
+            </div>
+          </div>
+      
+          <div class="row-cartas">
+            <div class="cartas-col-12">
               <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Instalar Security System</h5>
+                    <h5 class="card-title">Ingelmac</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
-                    <p class="card-text">Realizar instalación de cámaras de seguridad, alarmas de seguridad 
-                      y programar el sistema de seguridad; también, realizar prevención.</p>
-                    <p class="card-fecha">Agosto 2016 - Mayo 2017</p>  
-                    <p class="parrafoexpe">10 meses</p>
+                    <p class="card-text">Auxiliar de obras eléctricas y cometidas en tubería de metal para
+                      transportar el cable de corriente. Realizaba aseo al área de trabajo y cumplia con las tareas asisganadas</p>
+                    <p class="card-fecha">Septiembre 2017 - Junio 2018</p>  
+                    <p class="parrafoexpe">8 meses</p>
                     <p class="parrafolugar">Colombia - Bogotá</p>
                   </div>
                 </div>
               </article>
-          </div>
-        </div>
-    
-        <div class="row-cartas">
-          <div class="cartas-col-12">
-            <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Ingelmac</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Auxiliar</h6>
-                  <p class="card-text">Auxiliar de obras eléctricas y cometidas en tubería de metal para
-                    transportar el cable de corriente. Realizaba aseo al área de trabajo y cumplia con las tareas asisganadas</p>
-                  <p class="card-fecha">Septiembre 2017 - Junio 2018</p>  
-                  <p class="parrafoexpe">8 meses</p>
-                  <p class="parrafolugar">Colombia - Bogotá</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-    
-        <div class="row-cartas">
-          <div class="cartas-col-12">
-            <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Camping Illuchi</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
-                  <p class="card-text">Encargado del lugar donde se hospedan viajeros, recaudar el dinero de hospedaje
-                    establecer trabajo a personal de limpieza (voluntarios); tener los servicios adecuados para los clientes.</p>
-                  <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
-                  <p class="parrafoexpe">7 meses</p>
-                  <p class="parrafolugar">Ecuador - Baños de agua santa</p>
-                </div>
-              </div>
-          </article>
-          </div>
-        </div>
-    
-        <div class="row-cartas">
-          <div class="cartas-col-12">
-            <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Campaña 106 - Cámara por Bogotá</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Gerente campaña</h6>
-                  <p class="card-text">Candidata Alexandra Useche Cuervo. <br> Encargado del manejo de personal y redes sociales, realizar publicidad y realizar varias reuniones;
-                    participamos de eventos sociales.</p>
-                  <p class="card-fecha">Diciembre 2021 - Marzo 2022</p>  
-                  <p class="parrafoexpe">4 meses</p>
-                  <p class="parrafolugar">Colombia - Bogotá</p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      </div>
-    
-        
-          <div class="col-lg-12">  
-            <div class="Experiencia">
-              <h2 id="titulofreelance">Freelance</h2>
-                <article class="Freelance" data-aos="flip-down">
-                  <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Proximamente</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Proximamente</h6>
-                    <p class="card-text"></p>
-                    <p class="card-fecha">Proximo</p>  
-                    <p class="parrafoexpe">Proximo</p>
-                    <p class="parrafolugar">Proximo</p>
-                  </div>
-                </div>
-                </article>
             </div>
           </div>
-          <div class="col-lg-12">             
-            <div class="Experiencia">
-              <h2 id="tituloindependiente">Independinte</h2>
-                <article class="Independiente" data-aos="flip-down">
-                  <div class="card">
+      
+          <div class="row-cartas">
+            <div class="cartas-col-12">
+              <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Artista callejero</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Artesano y Malabarista</h6>
-                    <p class="card-text">Realizaba trabajos tejidos profesionales y vendia variedad de bisuteria
-                      mientras estaba viajando y conociendo; en los semaforos realizaba malabares
-                      para recaudar monedas para hospedaje, comida, entre otras necesidades.</p>
-                    <p class="card-fecha">Septiembre 2018 - Octubre 2020</p>  
-                    <p class="parrafoexpe">2 años</p>
-                    <p class="parrafolugar">Colombia - Ecuador</p>
+                    <h5 class="card-title">Camping Illuchi</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Administrador</h6>
+                    <p class="card-text">Encargado del lugar donde se hospedan viajeros, recaudar el dinero de hospedaje
+                      establecer trabajo a personal de limpieza (voluntarios); tener los servicios adecuados para los clientes.</p>
+                    <p class="card-fecha">Agosto 2019 - Febrero 2020</p>  
+                    <p class="parrafoexpe">7 meses</p>
+                    <p class="parrafolugar">Ecuador - Baños de agua santa</p>
                   </div>
                 </div>
-                </article>
+            </article>
             </div>
           </div>
+      
+          <div class="row-cartas">
+            <div class="cartas-col-12">
+              <article class="contratos" data-aos="flip-left" data-aos-duration="3000">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Campaña 106 - Cámara por Bogotá</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Gerente campaña</h6>
+                    <p class="card-text">Candidata Alexandra Useche Cuervo. <br> Encargado del manejo de personal y redes sociales, realizar publicidad y realizar varias reuniones;
+                      participamos de eventos sociales.</p>
+                    <p class="card-fecha">Diciembre 2021 - Marzo 2022</p>  
+                    <p class="parrafoexpe">4 meses</p>
+                    <p class="parrafolugar">Colombia - Bogotá</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+          
+            <div class="col-lg-12">  
+              <div class="Experiencia">
+                <h2 id="titulofreelance">Freelance</h2>
+                  <article class="Freelance" data-aos="flip-down">
+                    <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Proximamente</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Proximamente</h6>
+                      <p class="card-text"></p>
+                      <p class="card-fecha">Proximo</p>  
+                      <p class="parrafoexpe">Proximo</p>
+                      <p class="parrafolugar">Proximo</p>
+                    </div>
+                  </div>
+                  </article>
+              </div>
+            </div>
+            <div class="col-lg-12">             
+              <div class="Experiencia">
+                <h2 id="tituloindependiente">Independinte</h2>
+                  <article class="Independiente" data-aos="flip-down">
+                    <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Artista callejero</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Artesano y Malabarista</h6>
+                      <p class="card-text">Realizaba trabajos tejidos profesionales y vendia variedad de bisuteria
+                        mientras estaba viajando y conociendo; en los semaforos realizaba malabares
+                        para recaudar monedas para hospedaje, comida, entre otras necesidades.</p>
+                      <p class="card-fecha">Septiembre 2018 - Octubre 2020</p>  
+                      <p class="parrafoexpe">2 años</p>
+                      <p class="parrafolugar">Colombia - Ecuador</p>
+                    </div>
+                  </div>
+                  </article>
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
-</section>
+  </section>
+  </main>
+    <!-- Sección de footer -->
+    <footer id="contactos">
+      <div class="container enlaces-footer">
+                <a class="logo1" href="https://www.facebook.com/todocomienza.erickhernandez/"><img src="../assets/images/Iconos/Facebook.png" alt="Facebook"></a>
+                <a class="logo2" href="https://www.instagram.com/erck.hernandez/"><img src="../assets/images/Iconos/Instagram.png" alt="Instagram"></a>
+                <a class="logo3" href="https://www.tiktok.com/@erickhdz9628"><img src="../assets/images/Iconos/Tik-tok.png" alt="Tik-tok"></a>
+                <a class="logo4" href="https://wa.me/573022016072"><img src="../assets/images/Iconos/Whatsapp.png" alt="Whatsapp"></a>
+                <a class="logo5" href="https://www.linkedin.com/in/erick-hernandez-a9b6aa207/"><img src="../assets/images/Iconos/Linkedin.png" alt="linkedin"></a>
+                <a class="logo6" href="https://github.com/Erick28Hdz"><img src="../assets/images/Iconos/Github.png" alt="GitHub"></a>
+        </div> 
+      <div class="container informacion-footer">    
+        <p class="infofooter">Comunícate</p>
+        <img src="../assets/images/perfil/firma.png" alt="" class="firma" download="none">  
+        <p class="año">2024</p>
+      </div>          
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="MiPortafolio/src/js/main.js"></script> 
+  </body>
+</body>
+</html>
+
+

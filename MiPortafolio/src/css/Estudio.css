@@ -1,0 +1,208 @@
+:root {
+    --color-primary: #eeeeee;
+    --color-secondary: #000;
+    --color-accent: #4e4feb;
+    --color-background: #068fff;
+    --titulos: 40px;
+    --parrafos: 16px;
+    --Textos: 14px;
+    --subtitulos: 24px;
+    --anuncios: 16px;
+    --botones: 18px;
+    --letra-botones: "Black Ops One", cursive;
+    --letra-subtitulos: "Raleway", sans-serif;
+    --letra-textos: "Montserrat", sans-serif;
+    --letra-anuncios: "Titillium Web", sans-serif;
+    --letra-titulos: "Roboto", sans-serif;
+    --letra-enlaces: "Exo 2", sans-serif;
+    --letra-principal: "New Rocker", cursive;
+  }
+  
+  body {
+    background-color: var(--color-secondary);
+    padding: 0px;
+  }
+
+  /*Header*/
+  header{
+    background-color: var(--color-secondary);
+    padding: 0px;
+  }
+
+  /*Barra de navegación principal*/
+.container-nav {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-nav {
+  width: 7rem;
+  margin-left: 2rem;
+}
+
+.navbar-title {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.container-lista {
+  width: 100%;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+  padding: 5px 8px;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  align-self: center;
+}
+
+.nav-item {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  font-size: var(--botones);
+  border-radius: 4px 2px 2px;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: var(--color-secondary);
+  font-size: var(--botones);
+  font-family: var(--letra-botones);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 1px 10px;
+  margin: 0;
+}
+
+.nav-item:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 3px 20px var(--color-background);
+  padding: 1px 10px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  max-width: 95%;
+}
+  /*Menu*/
+.menu-principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+#contactos {
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-secondary);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #contactos:hover {
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    box-shadow: 0px -5px 10px var(--color-primary);
+    overflow-x: hidden;
+  }
+  
+  .enlaces-footer {
+    width: 30%;
+    font-family: var(--letra-enlaces);
+    font-size: var(--parrafos);
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .enlaces-footer img {
+    width: 100%;
+  }
+  
+  .logo1:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 4px 1px #3b5998;
+  }
+  
+  .logo2:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 4px 1px #833ab4;
+  }
+  
+  .logo3:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 4px 1px #ff0050;
+  }
+  
+  .logo4:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 3px 1px #2bb741;
+  }
+  
+  .logo5:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 1px 1px #0e76a8;
+  }
+  
+  .logo6:hover {
+    transform: scale(1.2);
+    border-radius: 7px;
+    box-shadow: 3px 5px 4px 1px #171515;
+  }
+  
+  .enlaces img {
+    max-width: 50px;
+    display: flex;
+    transition: filter 0.3s;
+  }
+  
+  .enlaces img:hover {
+    filter: brightness(70%);
+  }
+  
+  .informacion-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .informacion-footer .infofooter {
+    text-decoration: none;
+    font-family: var(--letra-principal);
+    font-size: var(--subtitulos);
+    color: var(--color-secondary);
+  }
+  
+  .informacion-footer img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  
+  .año {
+    font-family: var(--letra-principal);
+    font-size: var(--subtitulos);
+  }
