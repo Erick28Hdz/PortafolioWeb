@@ -100,8 +100,192 @@
   margin: 0 auto;
 }
 
-/* Footer */
+.barra-pro {
+  width: 95%;
+  border: 3px solid var(--color-primary);
+  position: relative;
+  top: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+}
 
+#titulo-proyectos {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-background);
+  margin: 20px;
+  text-shadow: 1.5px 2px 2px var(--color-primary);
+  letter-spacing: 10px;
+}
+
+#titulo-proyectos:hover {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-accent);
+  margin: 20px;
+  text-shadow: 1.5px 2px 1px var(--color-primary);
+}
+
+.contenedor-proyectos {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background-color: var(--color-secondary);
+  border-color: 2px solid var(--color-primary);
+  border-radius: 15px;
+  box-shadow: 0px 2px 30px var(--color-background);
+  width: 90%;
+  height: 100%;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+.Proyectos {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px var(--color-secondary) solid;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px var(--color-accent);
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin-top: 15px;
+  margin: 10px auto;
+}
+
+/*Imagenes del contenedor de proyectos*/
+.card-img-top {
+  border-radius: 10px;
+  border: solid 1px var(--color-primary);
+  box-shadow: 0px 5px 15px var(--color-secondary);
+}
+
+#tituloterminados {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.Terminados {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.terminados {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cardpapa {
+  background-color: var(--color-accent);
+  width: 30%;
+  border: solid 2px var(--color-secondary);
+  border-radius: 10px;
+  justify-items: center;
+}
+
+#tituloproceso {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  text-decoration: none;
+  margin: 20px;
+}
+.Proceso {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Proceso-col-12 {
+  margin: 0 auto;
+  justify-content: center;
+  width: 30%;
+  border: solid 2px var(--color-secondary);
+  border-radius: 10px;
+}
+
+.cardproceso {
+  background-color: var(--color-accent);
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  justify-items: center;
+}
+
+#tituloinvestigacion {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.investigacion {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardinvest {
+  background-color: var(--color-accent);
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  justify-items: center;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tarjeta-col-12 {
+  margin: 0 auto;
+  justify-content: center;
+  width: 30%;
+  border: solid 2px var(--color-secondary);
+  border-radius: 10px;
+}
+
+.enlaces {
+  font-family: var(--letra-enlaces);
+  font-size: var(--parrafos);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Footer */
 #contactos {
     width: 100%;
     overflow: hidden;

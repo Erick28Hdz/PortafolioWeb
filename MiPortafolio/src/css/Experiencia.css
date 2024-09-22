@@ -100,8 +100,192 @@
   margin: 0 auto;
 }
 
-/* Footer */
+.barra-exp {
+  width: 95%;
+  border: 3px solid var(--color-primary);
+  position: relative;
+  top: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+}
 
+#Experiencia-laboral {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-background);
+  margin: 20px;
+  text-shadow: 1.5px 2px 2px var(--color-primary);
+  letter-spacing: 10px;
+}
+
+#Experiencia-laboral:hover {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-accent);
+  margin: 20px;
+  text-shadow: 1.5px 2px 1px var(--color-primary);
+}
+
+.contenedor-experiencia {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background-color: var(--color-secondary);
+  border-color: 2px solid var(--color-primary);
+  border-radius: 15px;
+  box-shadow: 0px 2px 30px var(--color-background);
+  width: 90%;
+  height: 100%;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+.Experiencia {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  border: 2px var(--color-secondary) solid;
+  border-radius: 2px;
+  box-shadow: 0px 5px 15px var(--color-accent);
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin: 15px auto;
+  align-items: center;
+}
+
+.cartas-col-12 {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contratos {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+}
+
+#titulocontratos {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+.sec-contr {
+  display: flex;
+  width: 100%;
+}
+
+.row-cartas {
+  width: 27%;
+}
+.card {
+  background-color: var(--color-secondary);
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card-body {
+  background-color: var(--color-accent);
+  padding: 10px;
+  margin: 2px;
+}
+
+.card-title {
+  font-family: var(--letra-botones);
+  font-size: var(--subtitulos);
+}
+.card-subtitle {
+  font-family: var(--letra-subtitulos);
+  font-size: var(--botones);
+  color: var(--color-primary) !important;
+}
+
+.card-text {
+  color: var(--color-secondary);
+  font-family: var(--letra-textos);
+  font-size: var(--parrafos);
+}
+
+.card-fecha,
+.parrafolugar,
+.parrafoexpe {
+  font-family: var(--letra-textos);
+  font-size: var(--Textos);
+}
+
+#titulofreelance {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+.Freelance {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#tituloindependiente {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+
+.Independiente {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Experiencia .parrafoexp {
+  color: var(--color-primary);
+  font-size: var(--parrafos);
+  text-align: end;
+  width: 98%;
+  height: auto;
+  color: var(--color-background);
+  text-shadow: 1px 2px 1px var(--color-accent);
+  box-shadow: 0 0 1px var(--color-primary);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 10px 10px;
+}
+
+.parrafoexp {
+  background-color: transparent;
+  font-family: var(--letra-textos);
+  transition: box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+}
+
+.parrafoexp:hover {
+  box-shadow: 0 0 10px var(--color-background);
+  background-color: var(--color-secondary);
+  text-shadow: 1px 2px 1px var(--color-background);
+  color: var(--color-primary);
+}
+
+/* Footer */
 #contactos {
     width: 100%;
     overflow: hidden;

@@ -100,8 +100,513 @@
   margin: 0 auto;
 }
 
-/* Footer */
+.barra-est {
+  width: 95%;
+  border: 3px solid var(--color-primary);
+  position: relative;
+  top: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+}
 
+#estudios-profesionales {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-background);
+  margin: 20px;
+  text-shadow: 1.5px 2px 2px var(--color-primary);
+  letter-spacing: 10px;
+}
+
+#estudios-profesionales:hover {
+  align-self: center;
+  font-family: var(--letra-principal);
+  font-size: var(--titulos);
+  color: var(--color-accent);
+  margin: 20px;
+  text-shadow: 1.5px 2px 1px var(--color-primary);
+}
+
+.contenedor-estudio {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background-color: var(--color-secondary);
+  border-color: 2px solid var(--color-primary);
+  border-radius: 15px;
+  box-shadow: 0px 2px 30px var(--color-background);
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Estudios {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  border: 2px var(--color-secondary) solid;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0px 3px 5px var(--color-accent);
+  background-color: var(--color-primary);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#titulo-pregrado {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 20px;
+}
+
+.Estudios .parrafoest {
+  color: var(--color-primary);
+  font-size: var(--parrafos);
+  text-align: center;
+  width: 90%;
+  height: auto;
+  color: var(--color-secondary);
+  text-shadow: 1px 2px 1px var(--color-primary);
+  box-shadow: 0 0 1px var(--color-primary);
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+  margin: 5px 10px;
+}
+
+.parrafoest {
+  background-color: transparent;
+  font-family: var(--letra-textos);
+  transition: box-shadow 0.5s ease;
+  transition: background-color 0.6s ease;
+  position: relative;
+  padding: 10px;
+  margin: 5px;
+  bottom: 10px;
+}
+
+.parrafoest:hover {
+  box-shadow: 0 0 10px var(--color-background);
+  background-color: var(--color-secondary);
+  text-shadow: 0px 2px 1px var(--color-background);
+  color: var(--color-primary);
+  border: 1px solid var(--color-background);
+}
+/*Contenedor de cursos*/
+.Cursos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px var(--color-secondary) solid;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px var(--color-accent);
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.navbar-Cursos {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+}
+
+#titulo-cursos {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 20px;
+}
+
+/*Sección de botones de cursos y botones del menú*/
+.container-lista {
+  width: 100%;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+  padding: 5px 8px;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  align-self: center;
+}
+
+.nav-item {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  font-size: var(--botones);
+  border-radius: 4px 2px 2px;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: var(--color-secondary);
+  font-size: var(--botones);
+  font-family: var(--letra-botones);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 1px 10px;
+  margin: 0;
+}
+
+.nav-item:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 3px 20px var(--color-background);
+  padding: 1px 10px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  max-width: 95%;
+}
+
+/**Secciones de cursos**/
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  height: 50px;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  left: 0;
+}
+
+.carousel-indicators {
+  background-color: #000;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  bottom: 10px;
+  box-shadow: 0px 1px 5px var(--color-background);
+}
+
+/*Seccion cursos cortos*/
+.sectioncursocortos {
+  background-color: var(--color-accent);
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 3px var(--color-secondary);
+  margin: 0 auto;
+}
+
+#titulo-cursoscortos {
+  font-family: var(--letra-subtitulos);
+  font-size: var(--subtitulos);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  color: var(--color-primary);
+}
+
+#carouselCursoscortos {
+  background-color: var(--color-secondary);
+  padding: 30px 30px 60px;
+  box-shadow: 2px 2px 8px 1px var(--color-background);
+  border: 1px var(--color-background) solid;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-controluno-prev {
+  width: 7%;
+  position: relative;
+  bottom: 420px;
+  right: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-controluno-next {
+  width: 7%;
+  position: relative;
+  bottom: 420px;
+  left: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.containercursos {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.tituloscursos {
+  background-color: var(--color-background);
+  border-radius: 2px;
+  width: 100%;
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.parrafoscursos {
+  color: #fff;
+}
+
+.carouselCursoscortos.imagencurso {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px -2px 7px 3px var(--color-background);
+}
+
+/*Seccion diplomados*/
+#carouselDiplomados {
+  background-color: var(--color-secondary);
+  padding: 30px 40px 40px;
+  box-shadow: 2px 2px 8px 1px var(--color-background);
+  border: 1px var(--color-background) solid;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-controldos-prev {
+  width: 7%;
+  position: relative;
+  bottom: 350px;
+  right: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-controldos-next {
+  width: 7%;
+  position: relative;
+  bottom: 350px;
+  left: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.sectiondiplomados {
+  background-color: var(--color-accent);
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 3px var(--color-secondary);
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+#titulo-diplomados {
+  margin-top: 10px;
+  font-family: var(--letra-subtitulos);
+  font-size: var(--subtitulos);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.containerdiplomados {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.titulosdiplomados {
+  background-color: var(--color-background);
+  border-radius: 2px;
+  width: 90%;
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.parrafosdiplomados {
+  color: #fff;
+}
+
+.imagendiplomados {
+  width: 70%;
+  object-fit: cover;
+  box-shadow: 0px -2px 7px 3px var(--color-background);
+}
+/*Seccion de seminarios*/
+#carouselseminarios {
+  background-color: var(--color-secondary);
+  padding: 30px 40px 40px;
+  box-shadow: 2px 2px 8px 1px var(--color-background);
+  border: 1px var(--color-background) solid;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-controltres-prev {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  right: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-controltres-next {
+  width: 5%;
+  position: relative;
+  bottom: 350px;
+  left: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.sectionseminarios {
+  background-color: var(--color-accent);
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 3px var(--color-secondary);
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+#titulo-seminarios {
+  margin-top: 10px;
+  font-family: var(--letra-subtitulos);
+  font-size: var(--subtitulos);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.containerseminarios {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.titulosseminarios {
+  background-color: var(--color-background);
+  border-radius: 2px;
+  width: 90%;
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.parrafosseminarios {
+  color: #fff;
+}
+
+.imagenseminarios {
+  width: 70%;
+  object-fit: cover;
+  box-shadow: 0px -2px 7px 3px var(--color-background);
+}
+/*Seccion cursos universitarios*/
+#carouselCreditosUniversitarios {
+  background-color: var(--color-secondary);
+  padding: 30px 40px 40px;
+  box-shadow: 2px 2px 8px 1px var(--color-background);
+  border: 1px var(--color-background) solid;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.carousel-controlcuatro-prev {
+  width: 7%;
+  position: relative;
+  bottom: 650px;
+  right: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.carousel-controlcuatro-next {
+  width: 7%;
+  position: relative;
+  bottom: 650px;
+  left: 44%;
+  border: none;
+  background-color: transparent;
+}
+
+.sectioncrediuni {
+  background-color: var(--color-accent);
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 3px var(--color-secondary);
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+#titulo-crediuni {
+  margin-top: 10px;
+  font-family: var(--letra-subtitulos);
+  font-size: var(--subtitulos);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.containercrediuni {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.tituloscrediuni {
+  background-color: var(--color-background);
+  border-radius: 2px;
+  width: 90%;
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.parrafoscrediuni {
+  color: #fff;
+}
+
+.imagencrediuni {
+  width: 70%;
+  object-fit: cover;
+  box-shadow: 0px -2px 7px 3px var(--color-background);
+}
+
+/* Footer */
 #contactos {
     width: 100%;
     overflow: hidden;
