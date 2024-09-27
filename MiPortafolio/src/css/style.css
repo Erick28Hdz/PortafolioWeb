@@ -104,6 +104,7 @@ section .hero {
 #hero {
   background-image: url(../assets/images/Portadas/smart-4308821_1920.jpg);
   background-size: cover;
+  box-shadow: 0px 0px 20px var(--color-background);
   background-position: center;
   overflow: hidden;
   height: auto;
@@ -734,12 +735,12 @@ b {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--color-primary);
+  
 }
 
 .titulo-descripcion {
   font-size: var(--subtitulos);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
   margin: 20px;
@@ -748,18 +749,12 @@ b {
 .parrafog {
   width: 100%;
   padding: 10px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   background-color: transparent;
   font-family: var(--letra-textos);
   transition: background-color 0.6s ease;
 }
 
-.parrafog:hover {
-  box-shadow: 0 0 10px var(--color-background);
-  background-color: var(--color-secondary);
-  text-shadow: 0px 2px 1px var(--color-background);
-  color: var(--color-primary);
-}
 
 .contenedor-mapa{
   width: 30%;
