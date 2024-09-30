@@ -18,6 +18,10 @@
   --letra-principal: "New Rocker", cursive;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body.container-fluid {
   background-color: var(--color-secondary);
   padding: 0px;
@@ -347,8 +351,8 @@ b {
   text-align: center;
   font-size: var(--Textos);
   font-family: var(--letra-subtitulos);
-  color: var(--color-primary);
-  line-height: 1.4;
+  color: var(--color-secondary);
+  line-height: 1.2;
 }
 
 .btn-group {
@@ -711,25 +715,39 @@ b {
   bottom: 5px;
 }
 
-/*Sección de descripcion propia*/
-.bloque-descriptivo{
+/*Sección 1 de presentación personal*/
+.bloque-descriptivo1{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 30rem;
+  margin: 10px;
 }
 
 .contenedor-descripcion {
   max-width: 65%;
   background-color: var(--color-secondary);
-  border-color: 2px solid var(--color-primary);
+  border: 1px solid var(--color-accent); /* Ajuste del borde */
   border-radius: 15px;
-  box-shadow: 0px 2px 10px var(--color-background);
   margin: 20px;
   padding: 15px;
   display: flex;
   align-self: center;
+  position: relative; /* Necesario para el pseudo-elemento */
 }
 
+.contenedor-descripcion::before {
+  content: ''; /* Asegúrate de agregar el contenido vacío */
+  position: absolute;
+  top: -8px; /* Ajuste de la posición para hacer que la sombra se vea */
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1; /* Para que quede detrás del contenido */
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  border-radius: 15px; /* Debe coincidir con el border-radius del contenedor */
+  filter: blur(10px); /* Efecto de desenfoque para simular la sombra */
+  opacity: 0.7; /* Ajusta la opacidad para darle un aspecto de sombra */
+}
 .Descripcion {
   display: flex;
   flex-direction: column;
@@ -755,7 +773,6 @@ b {
   transition: background-color 0.6s ease;
 }
 
-
 .contenedor-mapa{
   width: 30%;
   display: flex;
@@ -763,11 +780,19 @@ b {
   margin: 10px;
 }
 
+.titulomapa{
+  text-align: center;
+  font-size: var(--titulos);
+  color: var(--color-primary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 5px;
+}
+
 .mapa-sudamerica {
   background-color: transparent;
   width: 100%;
   max-width: 800px;
-  margin: 20px auto;
   position: relative;
 }
 
@@ -775,31 +800,181 @@ b {
   position: absolute;
 }
 
-#info-box {
-  background: var(--color-accent);
-  border: 1px solid var(--color-background);
-  padding: 5px;
+#country-name{
+  font-size: var(--subtitulos);
+  color: var(--color-primary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 5px;
+  padding-left: 10px;
 }
 
 #info-box p{
+  color: var(--color-primary);
   margin: 5px;
+  font-family: var(--letra-textos);
+  font-size: 15px;
 }
 
 .country {
   fill: var(--color-secondary);
   stroke: var(--color-primary);
-  stroke-width: 1;
+  stroke-width: 2;
   cursor: pointer;
+  
 }
+
 .country:hover {
   fill: var(--color-background);
 }
+
 .visited {
   fill: var(--color-accent);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
 }
 
+/*Sección 2 de servicios y habilidades*/
+.bloque-descriptivo2{
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
 
+.cards .red {
+  background-color: #FF3D73;
+  box-shadow: 3px -4px 4px -3px var(--color-primary);
+}
+
+.cards .blue {
+  background-color: #1E90FF;
+  box-shadow: 3px -4px 4px -3px var(--color-primary);
+}
+
+.cards .green {
+  background-color: #A500FF;
+  box-shadow: 3px -4px 4px -3px var(--color-primary);
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  height: 125px;
+  width: 300px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  border: 1px solid var(--color-secondary);
+  padding: 10px;
+}
+
+.cards .card p.tip {
+  font-size: var(--Textos);
+  font-family: var(--letra-subtitulos);
+  color: var(--color-secondary);
+  font-weight: 700;
+  text-shadow: 0px 1px 2px var(--color-primary);
+  margin: 0;
+}
+
+.cards .card p.second-text {
+  margin: 0;
+  padding-top:10px ;
+  font-size: 0.7em;
+  font-family: var(--letra-anuncios);
+  text-shadow: 0px 2px 2px var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+/* Sección 3 Reseñas y experiencias*/
+.bloque-descriptivo3{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.tarjetareseñas {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.tarjetareseñas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tarjetareseñas::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.tarjetareseñas p:not(.heading) {
+  font-size: 14px;
+}
+
+.tarjetareseñas p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.tarjetareseñas:hover::after {
+  filter: blur(30px);
+}
+
+.tarjetareseñas:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
 
 /* Footer */
 
