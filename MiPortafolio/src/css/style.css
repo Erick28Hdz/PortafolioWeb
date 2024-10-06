@@ -46,8 +46,16 @@ body.container-fluid {
 .navbar-title {
   width: 100%;
   margin-left: 2rem;
+  font-family: var(--letra-principal);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  -webkit-text-stroke: 1px var(--color-accent);
+  font-size: 20px;
+  
 }
 
+.navbar-title b{
+  font-weight: 500;
+}
 .container-lista {
   width: 100%;
 }
@@ -67,17 +75,15 @@ body.container-fluid {
   background-color: var(--color-accent);
   color: var(--color-secondary);
   font-size: var(--botones);
-  border-radius: 4px 2px 2px;
-  border-width: 2px 2px 0px 2px;
-  border-style: solid;
+  border-radius: 5px;
+  border: 3px solid;
   border-color: var(--color-secondary);
-  font-size: var(--botones);
   font-family: var(--letra-botones);
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  padding: 1px 10px;
-  margin: 0;
+  padding: 0px 13px;
+  margin: 5px;
 }
 
 .nav-item:hover {
@@ -85,11 +91,31 @@ body.container-fluid {
   color: var(--color-primary);
   box-shadow: 0 3px 20px var(--color-background);
   padding: 1px 10px;
+  border: 1px solid var(--color-background);
 }
 
 .nav-item a {
   font-size: 18px;
-  max-width: 95%;
+  max-width: 100%;
+}
+
+.dropdown-menu{
+  background-color: var(--color-secondary);
+  margin: 2px;
+  padding: 5px;
+  border: 2px solid var(--color-primary);
+  width: 90%;
+}
+
+.dropdown-item{
+  padding: 2px;
+}
+
+.offcanvas-title {
+  font-family: var(--letra-principal);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  -webkit-text-stroke: 1px var(--color-accent);
+  font-size: 20px;
 }
 /*Banner principal*/
 section .hero {
@@ -157,14 +183,15 @@ h1:hover {
 
 .subtitulo {
   width: 100%;
-  margin-top: 30px;
   text-align: center;
   font-size: var(--subtitulos);
   color: var(--color-primary);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: var(--letra-principal);
-  text-shadow: 3px 6px 8px var(--color-accent);
+  text-shadow: 3px 6px 8px var(--color-secondary);
   z-index: 1;
+  -webkit-text-stroke: 1px var(--color-secondary);
+  font-size: 30px;
 }
 
 .subtitulo p{
