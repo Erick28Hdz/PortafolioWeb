@@ -773,8 +773,9 @@ b {
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
   border-radius: 15px; /* Debe coincidir con el border-radius del contenedor */
   filter: blur(10px); /* Efecto de desenfoque para simular la sombra */
-  opacity: 0.7; /* Ajusta la opacidad para darle un aspecto de sombra */
+  opacity: 1.7; /* Ajusta la opacidad para darle un aspecto de sombra */
 }
+
 .Descripcion {
   display: flex;
   flex-direction: column;

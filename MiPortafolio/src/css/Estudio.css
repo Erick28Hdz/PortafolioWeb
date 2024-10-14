@@ -46,8 +46,16 @@
 .navbar-title {
   width: 100%;
   margin-left: 2rem;
+  font-family: var(--letra-principal);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  -webkit-text-stroke: 1px var(--color-accent);
+  font-size: 20px;
+  
 }
 
+.navbar-title b{
+  font-weight: 500;
+}
 .container-lista {
   width: 100%;
 }
@@ -67,17 +75,15 @@
   background-color: var(--color-accent);
   color: var(--color-secondary);
   font-size: var(--botones);
-  border-radius: 4px 2px 2px;
-  border-width: 2px 2px 0px 2px;
-  border-style: solid;
+  border-radius: 5px;
+  border: 3px solid;
   border-color: var(--color-secondary);
-  font-size: var(--botones);
   font-family: var(--letra-botones);
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  padding: 1px 10px;
-  margin: 0;
+  padding: 0px 13px;
+  margin: 5px;
 }
 
 .nav-item:hover {
@@ -85,11 +91,31 @@
   color: var(--color-primary);
   box-shadow: 0 3px 20px var(--color-background);
   padding: 1px 10px;
+  border: 1px solid var(--color-background);
 }
 
 .nav-item a {
   font-size: 18px;
-  max-width: 95%;
+  max-width: 100%;
+}
+
+.dropdown-menu{
+  background-color: var(--color-secondary);
+  margin: 2px;
+  padding: 5px;
+  border: 2px solid var(--color-primary);
+  width: 90%;
+}
+
+.dropdown-item{
+  padding: 2px;
+}
+
+.offcanvas-title {
+  font-family: var(--letra-principal);
+  text-shadow: 2px 4px 3px var(--color-secondary);
+  -webkit-text-stroke: 1px var(--color-accent);
+  font-size: 20px;
 }
   /*Menu*/
 .menu-principal {
@@ -100,50 +126,83 @@
   margin: 0 auto;
 }
 
-.barra-est {
-  width: 95%;
-  border: 3px solid var(--color-primary);
-  position: relative;
-  top: 5px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 20px auto;
-}
-
+/*Titulo principal*/
 #estudios-profesionales {
-  align-self: center;
+  text-align: center;
   font-family: var(--letra-principal);
   font-size: var(--titulos);
   color: var(--color-background);
-  margin: 20px;
+  margin-top: 60px;
+  padding: 20px;
   text-shadow: 1.5px 2px 2px var(--color-primary);
   letter-spacing: 10px;
 }
 
 #estudios-profesionales:hover {
-  align-self: center;
+  text-align: center;
   font-family: var(--letra-principal);
   font-size: var(--titulos);
   color: var(--color-accent);
-  margin: 20px;
+  margin-top: 60px;
+  padding: 20px;
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
 
-.contenedor-estudio {
+
+.barra-des {
+  width: 95%;
+  border: 3px solid var(--color-primary);
+  position: relative;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  align-self: center;
+  margin: 10px auto;
+  bottom: 5px;
+}
+
+/*Contenedores de carrera profesional*/
+.carrera-profesional {
+  margin: 20px auto;
+  max-width: 75%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-estudio-carrera {
   background-color: var(--color-secondary);
-  border-color: 2px solid var(--color-primary);
+  border: 1px solid var(--color-accent); /* Ajuste del borde */
   border-radius: 15px;
-  box-shadow: 0px 2px 30px var(--color-background);
-  width: 100%;
-  height: 100%;
   margin: 10px;
   padding: 10px;
+  width: 60rem;
+}
+
+.contenedor-estudio-carrera::before {
+  content: ''; /* Asegúrate de agregar el contenido vacío */
+  position: absolute;
+  top: 4px; /* Ajuste de la posición para hacer que la sombra se vea */
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  z-index: -1; /* Para que quede detrás del contenido */
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  border-radius: 15px; /* Debe coincidir con el border-radius del contenedor */
+  filter: blur(7px); /* Efecto de desenfoque para simular la sombra */
+  opacity: 1.7; /* Ajusta la opacidad para darle un aspecto de sombra */
+}
+
+.flechatras{
+  left: -7rem;
+  height: 70%;
+  margin: auto;
+}
+
+.flechadelante {
+  right: -7rem;
+  height: 70%;
+  margin: auto;
 }
 
 .Estudios {
@@ -151,167 +210,25 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-items: center;
-  border: 2px var(--color-secondary) solid;
-  border-radius: 3px;
-  position: relative;
-  box-shadow: 0px 3px 5px var(--color-accent);
-  background-color: var(--color-primary);
-  margin: 10px auto;
-  padding: 10px;
 }
 
 #titulo-pregrado {
   font-size: var(--subtitulos);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: var(--letra-titulos);
   text-shadow: 2px 4px 3px var(--color-background);
   margin: 20px;
-}
-
-.Estudios .parrafoest {
-  color: var(--color-primary);
-  font-size: var(--parrafos);
-  text-align: center;
-  width: 90%;
-  height: auto;
-  color: var(--color-secondary);
-  text-shadow: 1px 2px 1px var(--color-primary);
-  box-shadow: 0 0 1px var(--color-primary);
-  border-radius: 2px;
-  border: none;
-  padding: 5px;
-  margin: 5px 10px;
 }
 
 .parrafoest {
+  width: 100%;
+  margin: 10px;
+  color: var(--color-primary);
   background-color: transparent;
   font-family: var(--letra-textos);
-  transition: box-shadow 0.5s ease;
   transition: background-color 0.6s ease;
-  position: relative;
-  padding: 10px;
-  margin: 5px;
-  bottom: 10px;
-}
-
-.parrafoest:hover {
-  box-shadow: 0 0 10px var(--color-background);
-  background-color: var(--color-secondary);
-  text-shadow: 0px 2px 1px var(--color-background);
-  color: var(--color-primary);
-  border: 1px solid var(--color-background);
-}
-/*Contenedor de cursos*/
-.Cursos {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: 2px var(--color-secondary) solid;
-  border-radius: 5px;
-  box-shadow: 0px 5px 15px var(--color-accent);
-  background-color: var(--color-primary);
-  padding: 10px;
-  margin-top: 15px;
-}
-
-.navbar-Cursos {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 5px;
-  margin: 0 auto;
-}
-
-#titulo-cursos {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  margin: 20px;
-}
-
-/*Sección de botones de cursos y botones del menú*/
-.container-lista {
-  width: 100%;
-}
-
-.nav-lista {
-  list-style: none;
-  display: flex;
-  margin: 0 10px;
-  padding: 5px 8px;
-  gap: 10px;
-  height: auto;
-  width: auto;
-  align-self: center;
-}
-
-.nav-item {
-  background-color: var(--color-accent);
-  color: var(--color-secondary);
-  font-size: var(--botones);
-  border-radius: 4px 2px 2px;
-  border-width: 2px 2px 0px 2px;
-  border-style: solid;
-  border-color: var(--color-secondary);
-  font-size: var(--botones);
-  font-family: var(--letra-botones);
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 1px 10px;
-  margin: 0;
-}
-
-.nav-item:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-  box-shadow: 0 3px 20px var(--color-background);
-  padding: 1px 10px;
-}
-
-.nav-item a {
-  font-size: 18px;
-  max-width: 95%;
-}
-
-/**Secciones de cursos**/
-
-.carousel-inner {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-caption {
-  height: 50px;
-  position: relative;
-  padding: 20px;
-  margin: 20px;
-  left: 0;
-}
-
-.carousel-indicators {
-  background-color: #000;
-  width: 90%;
-  margin: 0 auto;
-  padding: 5px;
-  bottom: 10px;
-  box-shadow: 0px 1px 5px var(--color-background);
 }
 
 /*Seccion cursos cortos*/
@@ -385,6 +302,120 @@
   object-fit: cover;
   box-shadow: 0px -2px 7px 3px var(--color-background);
 }
+
+
+
+
+/*Contenedor de cursos*/
+.Cursos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px var(--color-secondary) solid;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px var(--color-accent);
+  background-color: var(--color-primary);
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.navbar-Cursos {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+}
+
+#titulo-cursos {
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 20px;
+}
+
+/*Sección de botones de cursos y botones del menú*/
+.container-lista {
+  width: 100%;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+  padding: 5px 8px;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  align-self: center;
+}
+
+.nav-item2 {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+  font-size: var(--botones);
+  border-radius: 4px 2px 2px;
+  border-width: 2px 2px 0px 2px;
+  border-style: solid;
+  border-color: var(--color-secondary);
+  font-size: var(--botones);
+  font-family: var(--letra-botones);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 1px 10px;
+  margin: 0;
+}
+
+.nav-item2:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 3px 20px var(--color-background);
+  padding: 1px 10px;
+}
+
+.nav-item2 a {
+  font-size: 18px;
+  max-width: 95%;
+}
+
+/**Secciones de cursos**/
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  height: 50px;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  left: 0;
+}
+
+.carousel-indicators {
+  background-color: #000;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  bottom: 10px;
+  box-shadow: 0px 1px 5px var(--color-background);
+}
+
+
 
 /*Seccion diplomados*/
 #carouselDiplomados {
