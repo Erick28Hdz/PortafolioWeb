@@ -303,8 +303,239 @@
   box-shadow: 0px -2px 7px 3px var(--color-background);
 }
 
+/*Bloqie de cartas*/
+.pruebas{
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 30px;
+  align-items: center;
+}
 
+.sec-men-cur{
+  margin-left: 70px;
+  padding: 20px;
+}
 
+.card-prueba {
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
+  background: var(--color-secondary);
+  border: 1px solid #fc00ff;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card-prueba p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: var(--color-secondary);
+  border: 2px solid var(--color-background);
+  font-family: var(--letra-textos);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-prueba p:hover {
+  flex: 4;
+}
+
+.card-prueba p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: .1em;
+}
+
+.card-prueba p:hover span {
+  transform: rotate(0);
+}
+
+.sec-curs-cort {
+  position: relative;
+  padding: 15px;
+  z-index: 1;
+  background-color: var(--color-secondary);
+  margin: 10px auto;
+}
+
+.sec-curs-cort::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  z-index: -1;
+  filter: blur(7px);
+  opacity: 1.7;
+  border-radius: 8px; /* Ajusta el radio del borde si deseas esquinas redondeadas */
+  padding: 2px; /* Tamaño del borde */
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: auto;
+  background: var(--color-secondary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid var(--color-secondary);
+}
+
+.card img {
+  width: 48px;
+  fill: #333;
+  transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--color-secondary);
+  opacity: 0;
+  transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: var(--subtitulos);
+  color: var(--color-primary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 2px 2px var(--color-background);
+  
+}
+
+.card__description {
+  margin: 10px 0 0;
+  color: var(--color-primary);
+  font-family: var(--letra-textos);
+  line-height: 1.4;
+}
+
+.card:hover img {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0;
+  background-color: var(--color-background);
+  font-family: var(--letra-botones);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px var(--color-primary) solid;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.card:hover .view-btn {
+  opacity: 1;
+}
+
+.view-btn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--color-secondary);
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.view-btn:hover,
+.view-btn:focus {
+  color: var(--color-background);
+  border: 1px var(--color-primary) solid;
+}
+
+.view-btn:hover:before,
+.view-btn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.view-btn:active {
+  transform: scale(0.9);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
 
 /*Contenedor de cursos*/
 .Cursos {
