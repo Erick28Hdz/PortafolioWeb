@@ -1,0 +1,120 @@
+{
+    "certificados": [
+      {
+        "categoria": "COMUNICACIÓN",
+        "certificados": [
+          {
+            "nombre": "English Dot Works 2",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "20 de diciembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/24. English dot works 2_page-0001.jpg"
+          },
+          {
+            "nombre": "Habilidades cognitivas en lecto-escritura",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "2 de noviembre del 2022",
+            "imagen":"../images/Certificados/cursos cortos/21 Lecto Escritura_page-0001.jpg"
+          },
+          {
+            "nombre": "English dot works 1",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "21 de septiembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/19. English dot works 1_page-0001.jpg"
+          }
+        ]
+      },
+      {
+        "categoria": "LIDERAZGO",
+        "certificados": [
+          {
+            "nombre": "Políticas de protección animal",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "28 de noviembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/23. CURSO AVANZADO SOBRE POLÍTICAS DE PROTECCIÓN ANIMAL_page-0001.jpg"
+          }
+        ]
+      },
+      {
+        "categoria": "NEGOCIOS",
+        "certificados": [
+          {
+            "nombre": "Marco logico de proyectos: identificación y analísis",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "10 de mayo del 2023",
+            "imagen":"../assets/images/Certificados/cursos cortos/31. MARCO LOGICO DE PROYECTOS IDENTIFICACION Y ANALISIS_page-0001.jpg"
+          },
+          {
+            "nombre": "Futuro de las industrias de atracciones, parques de diversiones y turismo: visión 360",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "Diciembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/30. Futuro de las atracciones_page-0001.jpg"
+          },
+          {
+            "nombre": "Transformación de modelos organizacionales para una gestión eficiente de procesos",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "Diciembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/30. Futuro de las atracciones_page-0001.jpg"
+          },
+          {
+            "nombre": "Formulación de proyectos en mi profesión",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "25 de noviembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/22. formulacion de proyectos_page-0001.jpg"
+          },
+          {
+            "nombre": "Modulo 3: la ctel como proces",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "8 de septiembre del 2022",
+            "imagen":"../assets/images/Certificados/cursos cortos/20 curso MÓDULO III_ LA CTEL COMO PROCESO_page-0001.jpg"
+          }
+        ]
+      },
+      {
+        "categoria": "SOCIEDAD",
+        "certificados": [
+          {
+            "nombre": "Pedagogia humana",
+            "institucion": "SENA",
+            "lugar": "Bogotá D.C",
+            "fecha": "9 de octubre del 2023",
+            "imagen":"../assets/images/Certificados/cursos cortos/33. Pedagogia humana_page-0001.jpg"
+          }
+        ]
+      },
+      {
+        "categoria": "TECNOLOGÍA",
+        "certificados": [
+          {
+            "nombre": "Diagnosticar la seguridad de la información de acuerdo con metodos de analísis y normativa técnica",
+            "institucion": "Cisco Networking Academy",
+            "lugar": "Bogotá D.C",
+            "fecha": "14 de diciembre del 2023",
+            "imagen":"../assets/images/Certificados/Diplomados/ErickHernandez-diplomado-certificate (1)_page-0001.jpg"
+          },
+          {
+            "nombre": "Auditor interno Norma ISO 27001/2022",
+            "institucion": "",
+            "lugar": "Bogotá D.C",
+            "fecha": "25 de diciembre del 2023",
+            "imagen":"../assets/images/Certificados/cursos cortos/35. Auditor interno iso-27001_page-0001.jpg"
+          },
+          {
+            "nombre": "Administrador de bases de datos",
+            "institucion": "SENA",
+            "lugar": "Bogotá D.C",
+            "fecha": "26 de junio del 2023",
+            "imagen":"../assets/images/Certificados/cursos cortos/32. administrador bases de datos certificado_page-0001.jpg"
+          }
+        ]
+      }
+    ]
+  }

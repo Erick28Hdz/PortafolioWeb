@@ -303,25 +303,42 @@
   box-shadow: 0px -2px 7px 3px var(--color-background);
 }
 
-/*Bloqie de cartas*/
+/*Bloqie de cursos cortos*/
 .pruebas{
   display: flex;
-  margin: 0 auto;
   padding: 20px 30px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .sec-men-cur{
-  margin-left: 70px;
   padding: 20px;
+  margin-left: 70px;
 }
 
+.seccion-cursos-cortos{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sec-curs-cort {
+  display: flex;
+  position: relative;
+  padding: 15px;
+  z-index: 1;
+  background-color: var(--color-secondary);
+  margin: 10px auto;
+}
+
+/*Tarjeta de categorias*/
 .card-prueba {
   width: 400px;
   height: 200px;
   border-radius: 4px;
   background: var(--color-secondary);
   border: 1px solid #fc00ff;
+  box-shadow: 0px 0px 20px 1px #fc00ff;
   display: flex;
   gap: 5px;
   padding: .4em;
@@ -344,6 +361,7 @@
 
 .card-prueba p:hover {
   flex: 4;
+  box-shadow: 0px 0px 10px 2px #fc00ff;
 }
 
 .card-prueba p span {
@@ -361,14 +379,6 @@
   transform: rotate(0);
 }
 
-.sec-curs-cort {
-  position: relative;
-  padding: 15px;
-  z-index: 1;
-  background-color: var(--color-secondary);
-  margin: 10px auto;
-}
-
 .sec-curs-cort::before {
   content: "";
   position: absolute;
@@ -380,8 +390,8 @@
   z-index: -1;
   filter: blur(7px);
   opacity: 1.7;
-  border-radius: 8px; /* Ajusta el radio del borde si deseas esquinas redondeadas */
-  padding: 2px; /* Tamaño del borde */
+  border-radius: 8px;
+  padding: 2px;
 }
 
 .card {
@@ -532,10 +542,143 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #fff;
+  color: var(--color-background);
   font-size: 30px;
   cursor: pointer;
 }
+
+/*Flecha right*/
+.arrow {
+  cursor: pointer;
+  transform: translateX(-150%) translateY(0%);
+  transition: transform 0.1s;
+  width: 50px;
+}
+
+.arrow-top, .arrow-bottom {
+  background-color: var(--color-background);
+  box-shadow: 0px 0px 20px 4px #fc00ff;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.arrow-top:after, .arrow-bottom:after {
+  background-color: #fc00ff;
+  
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+/*Flecha left*/
+.arrow-left{
+  cursor: pointer;
+  transform: translateX(150%) translateY(0%);
+  transition: transform 0.1s;
+  width: 50px;
+}
+
+.arrow-top-left, .arrow-bottom-left {
+  background-color: var(--color-background);
+  box-shadow: 0px 0px 20px 4px #fc00ff;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.arrow-top-left:after, .arrow-bottom-left:after {
+  background-color: #fc00ff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.arrow-top-left {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.arrow-top-left:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0.15s;
+}
+
+.arrow-bottom-left {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.arrow-bottom-left:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0s;
+}
+
+.arrow-left:hover .arrow-top-left:after {
+  left: 0;
+  transition-delay: 0s;
+}
+
+.arrow-left:hover .arrow-bottom-left:after {
+  right: 0;
+  transition-delay: 0.15s;
+}
+
+.arrow-left:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+
 
 /*Contenedor de cursos*/
 .Cursos {
