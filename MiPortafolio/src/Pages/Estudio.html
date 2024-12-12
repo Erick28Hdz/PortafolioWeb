@@ -122,48 +122,29 @@
       </div>
     </section>
     <hr class="barra-des">
-    <section class="pruebas">
-      <div class="sec-men-cur">
-        <div class="card-prueba">
-          <p><span>COMUNICACIÓN</span></p>
-          <p><span>LIDERAZGO</span></p>
-          <p><span>NEGOCIOS</span></p>
-          <p><span>SOCIEDAD</span></p>
-          <p><span>TECNOLOGÍA</span></p>
-        </div>
-      </div>
-      <div class="seccion-cursos-cortos">
-        <div class="arrow-left"onclick="anteriorCertificado()">
-          <div class="arrow-top-left"></div>
-          <div class="arrow-bottom-left"></div>
-        </div>
-        <div class="sec-curs-cort">
-          <div class="card">
-            <img src="../assets/images/Certificados/Diplomados/ErickHernandez-diplomado-certificate (1)_page-0001.jpg" class="imagendiplomados d-block w-100" alt="...">
-            <div class="card__content">
-              <p class="card__title">Diagnosticar la seguridad de la información de acuerdo con metodos de analísis y normativa técnica</p>
-              <p class="card__description">
-                Cisco Networking Academy
-              </p>
-              <p class="card__description">
-                14 de diciembre del 2023 <br> Bogotá D.C 
-              </p>
-            </div>
-            <button class="view-btn" onclick="showModal()">Ver en grande</button>
+      <section class="pruebas">
+        <div class="sec-men-cur">
+          <div class="card-prueba">
+            <p><span data-category="COMUNICACIÓN">COMUNICACIÓN</span></p>
+            <p><span data-category="LIDERAZGO">LIDERAZGO</span></p>
+            <p><span data-category="NEGOCIOS">NEGOCIOS</span></p>
+            <p><span data-category="SOCIEDAD">SOCIEDAD</span></p>
+            <p><span data-category="TECNOLOGÍA">TECNOLOGÍA</span></p>
           </div>
         </div>
-        <div class="arrow"onclick="siguienteCertificado()">
-          <div class="arrow-top"></div>
-          <div class="arrow-bottom"></div>
+        <div class="gallery">
+          <div class="gallery-container">
+            
+          </div>
+          <button class="view-btn" onclick="showModal()">Ver en grande</button>
+          <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal__content" id="modalImage">
+          </div> 
+          <div class="gallery-controls"></div>
         </div>
-      </div>
-      <!-- Modal -->
-      <div id="imageModal" class="modal">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <img class="modal__content" id="modalImage">
-      </div>      
-    </section>
-    
+      </section>
+    <hr class="barra-des">    
     <hr class="barra-des">        
     <section class="sectioncursocortos">
       <h4 id="titulo-cursoscortos" href="Cursos-cortos">Cursos Cortos</h4>

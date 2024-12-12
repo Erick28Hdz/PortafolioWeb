@@ -1,65 +1,118 @@
-// Variable para almacenar el índice del certificado que se mostrará en cada categoría
-let currentCertificateIndex = 0;
-let currentCategory = "";
+const jsonFile = '/MiPortafolio/src/assets/doc/Datos.json';
+const galleryContainer = document.querySelector('.gallery-container');
+const categoryElements = document.querySelectorAll('.card-prueba span');
+const galleryControlsContainer = document.querySelector('.gallery-controls');
+const galleryControls = ['anterior', 'siguiente'];
 
-// Función para cargar y mostrar certificados según la categoría y el índice seleccionados
-async function cargarCertificados(categoriaSeleccionada) {
-    try {
-        const response = await fetch('/MiPortafolio/src/assets/doc/Datos.json');
-        const data = await response.json();
+class Carousel {
+  constructor(container, items, controls) {
+    this.carouselContainer = container;
+    this.carouselControls = controls;
+    this.carouselArray = [...items];
 
-        // Buscar la categoría seleccionada en los datos JSON
-        const categoria = data.certificados.find(cat => cat.categoria === categoriaSeleccionada);
+    this.updateGallery();
+  }
 
-        if (categoria && categoria.certificados.length > 0) {
-            const certificados = categoria.certificados;
-            
-            // Asegurarse de que el índice esté dentro del rango de certificados disponibles
-            if (currentCertificateIndex >= certificados.length) {
-                currentCertificateIndex = 0;
-            } else if (currentCertificateIndex < 0) {
-                currentCertificateIndex = certificados.length - 1;
-            }
-
-            // Selecciona el certificado actual usando currentCertificateIndex
-            const certificado = certificados[currentCertificateIndex];
-
-            // Actualizar la tarjeta con los datos del certificado seleccionado
-            const card = document.querySelector('.card');
-            const img = card.querySelector('img');
-            const title = card.querySelector('.card__title');
-            const institution = card.querySelectorAll('.card__description')[0];
-            const dateLocation = card.querySelectorAll('.card__description')[1];
-
-            img.src = certificado.imagen || "../assets/images/placeholder.jpg"; // Imagen por defecto si falta
-            title.textContent = certificado.nombre;
-            institution.textContent = certificado.institucion;
-            dateLocation.innerHTML = `${certificado.fecha} <br> ${certificado.lugar}`;
-        } else {
-            console.log('No se encontraron certificados para esta categoría');
-        }
-    } catch (error) {
-        console.error('Error al cargar los datos:', error);
-    }
-}
-
-// Función para avanzar al siguiente certificado en la categoría actual
-function siguienteCertificado() {
-    currentCertificateIndex++;
-    cargarCertificados(currentCategory);
-}
-
-// Función para retroceder al certificado anterior en la categoría actual
-function anteriorCertificado() {
-    currentCertificateIndex--;
-    cargarCertificados(currentCategory);
-}
-
-// Evento para cambiar la categoría al hacer clic en el nombre de la categoría
-document.querySelectorAll('.card-prueba p').forEach(element => {
-    element.addEventListener('click', () => {
-        currentCategory = element.textContent.trim();
-        currentCertificateIndex = 0; // Reiniciar el índice al cambiar de categoría
-        cargarCertificados(currentCategory);
+  updateGallery() {
+    this.carouselArray.forEach(el => {
+      el.classList.remove('gallery-item1', 'gallery-item2', 'gallery-item3', 'gallery-item4', 'gallery-item5');
     });
+
+    this.carouselArray.slice(0, 5).forEach((el, i) => {
+      el.classList.add(`gallery-item${i + 1}`);
+    });
+  }
+
+  setCurrentState(direction) {
+    if (direction.className.includes('gallery-controls-anterior')) {
+      this.carouselArray.unshift(this.carouselArray.pop());
+    } else {
+      this.carouselArray.push(this.carouselArray.shift());
+    }
+    this.updateGallery();
+  }
+
+  setControls() {
+    this.carouselControls.forEach(control => {
+      const button = document.createElement('button');
+      button.className = `gallery-controls-${control}`;
+      button.innerText = control;
+      galleryControlsContainer.appendChild(button);
+    });
+  }
+
+  useControls() {
+    const triggers = [...galleryControlsContainer.childNodes];
+    triggers.forEach(control => {
+      control.addEventListener('click', e => {
+        e.preventDefault();
+        this.setCurrentState(control);
+      });
+    });
+  }
+}
+
+// Función para cargar todos los certificados inicialmente
+function loadGallery() {
+  return fetch(jsonFile)
+    .then(response => response.json())
+    .then(data => {
+      // Limpiar el contenedor y agregar las imágenes
+      galleryContainer.innerHTML = '';
+      data.certificates.forEach(cert => {
+        const img = document.createElement('img');
+        img.className = 'gallery-item';
+        img.src = cert.src;
+        img.alt = cert.alt;
+        galleryContainer.appendChild(img);
+      });
+
+      // Devuelve las imágenes cargadas
+      return document.querySelectorAll('.gallery-item');
+    })
+    .catch(error => console.error('Error al cargar los certificados:', error));
+}
+
+// Función para cargar certificados filtrados por categoría
+function loadCertificates(category) {
+  fetch(jsonFile)
+    .then(response => response.json())
+    .then(data => {
+      // Filtrar certificados por categoría
+      const filteredCertificates = data.certificates.filter(cert => cert.category === category);
+
+      // Limpiar el contenedor de la galería
+      galleryContainer.innerHTML = '';
+
+      // Agregar los certificados filtrados
+      filteredCertificates.forEach(cert => {
+        const img = document.createElement('img');
+        img.className = 'gallery-item';
+        img.src = cert.src;
+        img.alt = cert.alt;
+        galleryContainer.appendChild(img);
+      });
+
+      // Actualizar el carrusel con las nuevas imágenes
+      const newItems = document.querySelectorAll('.gallery-item');
+      exampleCarousel.carouselArray = [...newItems];
+      exampleCarousel.updateGallery();
+    })
+    .catch(error => console.error('Error al cargar certificados por categoría:', error));
+}
+
+// Agregar eventos a las categorías
+categoryElements.forEach(el => {
+  el.addEventListener('click', () => {
+    const category = el.dataset.category;
+    loadCertificates(category);
+  });
+});
+
+// Inicializar la galería y el carrusel
+let exampleCarousel;
+loadGallery().then(galleryItems => {
+  exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
+  exampleCarousel.setControls();
+  exampleCarousel.useControls();
 });
