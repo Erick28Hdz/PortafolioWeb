@@ -1,4 +1,4 @@
-const jsonFile = '/MiPortafolio/src/assets/doc/Datos.json';
+const jsonFile = './src/assets/doc/Datos.json';
 const galleryContainer = document.querySelector('.gallery-container');
 const categoryElements = document.querySelectorAll('.card-prueba span');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
