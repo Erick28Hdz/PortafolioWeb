@@ -1,12 +1,12 @@
 {
   "certificates": [
     {
-      "src": "/assets/images/Certificados/cursos cortos/01. Ejecución de herramientas básicas__page-0001.jpg",
+      "src": "../assets/images/Certificados/cursos cortos/01. Ejecución de herramientas básicas__page-0001.jpg",
       "alt": "Herramientas basicas",
       "category": "TECNOLOGÍA"
     },
     {
-      "src": "./assets/images/Certificados/cursos cortos/02. Defensor DDHH_page-0001.jpg",
+      "src": "../assets/images/Certificados/cursos cortos/02. Defensor DDHH_page-0001.jpg",
       "alt": "Derechos humanos",
       "category": "LIDERAZGO"
     },
@@ -16,12 +16,12 @@
       "category": "NEGOCIOS"
     },
     {
-      "src": "MiPortafolio/src/assets/images/Certificados/cursos cortos/04. Formulación de proyectos públicos__page-0001.jpg",
+      "src": "../assets/images/Certificados/cursos cortos/04. Formulación de proyectos públicos__page-0001.jpg",
       "alt": "Formulacion de proyectos",
       "category": "LIDERAZGO"
     },
     {
-      "src": "/MiPortafolio/src/assets/images/Certificados/cursos cortos/05. Arte en espacio público_page-0001.jpg",
+      "src": "../assets/images/Certificados/cursos cortos/05. Arte en espacio público_page-0001.jpg",
       "alt": "Arte espacio publico",
       "category": "SOCIEDAD"
     },
