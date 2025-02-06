@@ -1,4 +1,4 @@
-const jsonFile = '../assets/doc/Datos.json';
+const jsonFile = '../assets/doc/Cer-cur-cor.json';
 const galleryContainer = document.querySelector('.gallery-container');
 const categoryElements = document.querySelectorAll('.card-prueba span');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
@@ -52,6 +52,34 @@ class Carousel {
   }
 }
 
+// Función para abrir el modal
+function openModal(imageSrc, imageAlt) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const caption = document.getElementById('caption');
+
+  modal.style.display = "block";
+  modalImage.src = imageSrc;
+  caption.innerText = imageAlt;
+}
+
+// Función para cerrar el modal
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal.style.display = "none";
+}
+
+// Evento de cierre del modal
+document.getElementById('closeModal').addEventListener('click', closeModal);
+
+// Evento para cerrar el modal si se hace clic fuera de la imagen
+window.addEventListener('click', (e) => {
+  const modal = document.getElementById('imageModal');
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
 // Función para cargar todos los certificados inicialmente
 function loadGallery() {
   return fetch(jsonFile)
@@ -64,6 +92,10 @@ function loadGallery() {
         img.className = 'gallery-item';
         img.src = cert.src;
         img.alt = cert.alt;
+
+        // Añadir evento de click para abrir el modal
+        img.addEventListener('click', () => openModal(cert.src, cert.alt));
+
         galleryContainer.appendChild(img);
       });
 
