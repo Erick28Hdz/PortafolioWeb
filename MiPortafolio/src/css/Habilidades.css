@@ -1,35 +1,38 @@
 :root {
-    --color-primary: #eeeeee;
-    --color-secondary: #000;
-    --color-accent: #4e4feb;
-    --color-background: #068fff;
-    --titulos: 40px;
-    --parrafos: 16px;
-    --Textos: 14px;
-    --subtitulos: 24px;
-    --anuncios: 16px;
-    --botones: 18px;
-    --letra-botones: "Black Ops One", cursive;
-    --letra-subtitulos: "Raleway", sans-serif;
-    --letra-textos: "Montserrat", sans-serif;
-    --letra-anuncios: "Titillium Web", sans-serif;
-    --letra-titulos: "Roboto", sans-serif;
-    --letra-enlaces: "Exo 2", sans-serif;
-    --letra-principal: "New Rocker", cursive;
-  }
-  
-  body {
-    background-color: var(--color-secondary);
-    padding: 0px;
-  }
+  --color-primary: #eeeeee;
+  --color-secondary: #000;
+  --color-accent: #4e4feb;
+  --color-background: #068fff;
+  --titulos: 40px;
+  --parrafos: 16px;
+  --Textos: 14px;
+  --subtitulos: 24px;
+  --anuncios: 16px;
+  --botones: 18px;
+  --letra-botones: "Black Ops One", cursive;
+  --letra-subtitulos: "Raleway", sans-serif;
+  --letra-textos: "Montserrat", sans-serif;
+  --letra-anuncios: "Titillium Web", sans-serif;
+  --letra-titulos: "Roboto", sans-serif;
+  --letra-enlaces: "Exo 2", sans-serif;
+  --letra-principal: "New Rocker", cursive;
+}
 
-  /*Header*/
-  header{
-    background-color: var(--color-secondary);
-    padding: 0px;
-  }
+body {
+  background-color: var(--color-secondary);
+  padding: 0px;
+}
 
-  /*Barra de navegación principal*/
+/*Header*/
+header {
+  background-color: var(--color-secondary);
+  padding: 0px;
+}
+
+main {
+  margin: 0 auto;
+}
+/*Barra de navegación principal*/
 .container-nav {
   padding-left: 10px;
   padding-right: 10px;
@@ -91,7 +94,7 @@
   font-size: 18px;
   max-width: 95%;
 }
-  /*Menu*/
+/*Menu*/
 .menu-principal {
   width: 100%;
   height: auto;
@@ -99,7 +102,6 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
 
 /*Habilidades profesionales*/
 .barra-hab {
@@ -142,6 +144,13 @@
   margin: 20px;
 }
 
+.secciones-habilidades {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .habi-digitales {
   background-color: var(--color-accent);
   margin: 0 auto;
@@ -151,7 +160,7 @@
 }
 
 .container-hab {
-  max-width: 50%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   background-color: var(--color-secondary);
@@ -165,7 +174,7 @@
 }
 
 .container-hab::before {
-  content: ''; /* Asegúrate de agregar el contenido vacío */
+  content: ""; /* Asegúrate de agregar el contenido vacío */
   position: absolute;
   top: -8px; /* Ajuste de la posición para hacer que la sombra se vea */
   left: -8px;
