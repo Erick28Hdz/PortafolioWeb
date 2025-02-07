@@ -80,6 +80,12 @@ window.addEventListener('click', (e) => {
   }
 });
 
+function assignModalEvents() {
+  document.querySelectorAll('.gallery-item').forEach(img => {
+    img.addEventListener('click', () => openModal(img.src, img.alt));
+  });
+}
+
 // Función para cargar todos los certificados inicialmente
 function loadGallery() {
   return fetch(jsonFile)
@@ -92,14 +98,11 @@ function loadGallery() {
         img.className = 'gallery-item';
         img.src = cert.src;
         img.alt = cert.alt;
-
-        // Añadir evento de click para abrir el modal
-        img.addEventListener('click', () => openModal(cert.src, cert.alt));
-
         galleryContainer.appendChild(img);
       });
 
       // Devuelve las imágenes cargadas
+      assignModalEvents();
       return document.querySelectorAll('.gallery-item');
     })
     .catch(error => console.error('Error al cargar los certificados:', error));
@@ -112,6 +115,7 @@ function loadCertificates(category) {
     .then(data => {
       // Filtrar certificados por categoría
       const filteredCertificates = data.certificates.filter(cert => cert.category === category);
+      galleryContainer.innerHTML = '';
 
       // Limpiar el contenedor de la galería
       galleryContainer.innerHTML = '';
@@ -126,6 +130,7 @@ function loadCertificates(category) {
       });
 
       // Actualizar el carrusel con las nuevas imágenes
+      assignModalEvents();
       const newItems = document.querySelectorAll('.gallery-item');
       exampleCarousel.carouselArray = [...newItems];
       exampleCarousel.updateGallery();

@@ -92,14 +92,11 @@ function loadGallery2() {
         img.className = 'gallery-item';
         img.src = cert.src;
         img.alt = cert.alt;
-
-        // Añadir evento de click para abrir el modal
-        img.addEventListener('click', () => openModal2(cert.src, cert.alt));
-
         galleryContainer2.appendChild(img);
       });
 
       // Devuelve las imágenes cargadas
+      assignModalEvents();
       return document.querySelectorAll('.gallery-item');
     })
     .catch(error => console.error('Error al cargar los certificados:', error));
@@ -112,6 +109,7 @@ function loadCertificates2(category) {
     .then(data => {
       // Filtrar certificados por categoría
       const filteredCertificates = data.certificates.filter(cert => cert.category === category);
+      galleryContainer2.innerHTML = '';
 
       // Limpiar el contenedor de la galería
       galleryContainer2.innerHTML = '';
@@ -126,6 +124,7 @@ function loadCertificates2(category) {
       });
 
       // Actualizar el carrusel con las nuevas imágenes
+      assignModalEvents();
       const newItems = document.querySelectorAll('.gallery-item');
       exampleCarousel2.carouselArray = [...newItems];
       exampleCarousel2.updateGallery();
