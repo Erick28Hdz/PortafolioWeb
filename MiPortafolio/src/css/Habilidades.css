@@ -130,37 +130,6 @@
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
 
-.contenedor-habilidades {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  background-color: var(--color-secondary);
-  border-color: 2px solid var(--color-primary);
-  border-radius: 15px;
-  box-shadow: 0px 2px 30px var(--color-background);
-  width: 90%;
-  height: 100%;
-  margin: 15px auto;
-  padding: 10px;
-}
-
-.Habilidades {
-  width: 95%;
-  height: auto;
-  display: flex;
-  text-align: center;
-  border: 2px var(--color-secondary) solid;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0px 5px 15px var(--color-accent);
-  background-color: var(--color-primary);
-  padding: 10px;
-  margin-top: 15px;
-  margin: 10px auto;
-}
-
 #titulo-habilidades {
   font-size: var(--subtitulos);
   color: var(--color-secondary);
@@ -182,15 +151,31 @@
 }
 
 .container-hab {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-accent); /* Ajuste del borde */
+  border-radius: 15px;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  align-self: center;
   position: relative;
-  max-width: 500px;
-  width: 100%;
-  background: var(--color-secondary);
-  margin: 0px auto;
-  padding: 10px 10px;
-  border-radius: 7px;
-  box-shadow: 2px 2px 8px 1px var(--color-background);
-  border: 1px var(--color-background) solid;
+}
+
+.container-hab::before {
+  content: ''; /* Asegúrate de agregar el contenido vacío */
+  position: absolute;
+  top: -8px; /* Ajuste de la posición para hacer que la sombra se vea */
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1; /* Para que quede detrás del contenido */
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  border-radius: 15px; /* Debe coincidir con el border-radius del contenedor */
+  filter: blur(10px); /* Efecto de desenfoque para simular la sombra */
+  opacity: 1.7; /* Ajusta la opacidad para darle un aspecto de sombra */
 }
 
 .container-hab .skill-box {

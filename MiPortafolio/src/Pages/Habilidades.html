@@ -1,78 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../assets/images/Logos/logo personal/logo-white.svg" type="image/svg">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@1,100&family=Montserrat&family=New+Rocker&family=Raleway&family=Roboto:wght@700&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/Habilidades.css">
-        <title>Habilidades personales</title>
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/images/Logos/logo personal/logo-white.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@1,100&family=Montserrat&family=New+Rocker&family=Raleway&family=Roboto:wght@700&family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Habilidades.css" />
+    <title>Habilidades personales</title>
+  </head>
+  <body>
     <!-- Sección de header -->
     <header>
       <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-nav">
-          <img class="logo-nav" src="../assets/images/Logos/logo personal/logo-no-background.svg" alt="">
+          <img
+            class="logo-nav"
+            src="../assets/images/Logos/logo personal/logo-no-background.svg"
+            alt=""
+          />
           <a class="navbar-brand navbar-title"><b>Mi Portafolio Web</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
-            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <!--Contenido del navbar-->
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú principal</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Menú principal
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
             <!--Lista desplegable del contenido del navbar-->
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../../index.html">Inicio</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../../../index.html"
+                    >Inicio</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="/MiPortafolio/src/Pages/Estudio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Estudios profesionales
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="/MiPortafolio/src/Pages/Estudio.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Estudios profesionales
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./Estudio.html">Pregrado</a></li>
-                    <li><a class="dropdown-item" href="./Estudio.html">Postgrado</a></li>
                     <li>
-                      <hr class="dropdown-divider">
+                      <a class="dropdown-item" href="./Estudio.html"
+                        >Pregrado</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="./Estudio.html">Otros cursos</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./Estudio.html"
+                        >Postgrado</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Estudio.html"
+                        >Otros cursos</a
+                      >
+                    </li>
                   </ul>
-                  <a class="nav-link dropdown-toggle" href="#titulos-habilidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Habilidades
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#titulos-habilidades"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Habilidades
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./Habilidades.html">Habilidades profesionales</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./Habilidades.html"
+                        >Habilidades profesionales</a
+                      >
+                    </li>
                   </ul>
-                  <a class="nav-link dropdown-toggle" href="#titulo-experiencia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Experiencia laboral
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#titulo-experiencia"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Experiencia laboral
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="./Experiencia.html">Contrato</a></li>
-                          <li><a class="dropdown-item" href="./Experiencia.html">Freelance</a></li>
-                          <li><a class="dropdown-item" href="./Experiencia.html">Independiente</a></li> 
+                    <li>
+                      <a class="dropdown-item" href="./Experiencia.html"
+                        >Contrato</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Experiencia.html"
+                        >Freelance</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Experiencia.html"
+                        >Independiente</a
+                      >
+                    </li>
                   </ul>
-                  <a class="nav-link dropdown-toggle" href="#titulo-proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Proyectos
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#titulo-proyectos"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Proyectos
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item" href="./Proyectos.html">Terminados</a></li>
-                          <li><a class="dropdown-item" href="./Proyectos.html">En Proceso</a></li>
-                          <li><a class="dropdown-item" href="./Proyectos.html">De Investigación</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./Proyectos.html"
+                        >Terminados</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Proyectos.html"
+                        >En Proceso</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Proyectos.html"
+                        >De Investigación</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -86,419 +188,431 @@
     </header>
     <h2 id="habilidades-profesionales">Habilidades Profesionales</h2>
     <!-- Sección de main -->
-    <hr class="barra-hab">
-    <main>          
-      <section class="contenedor-habilidades" > 
-      <div class="Habilidades row">
-        <div class="col-lg-6">
-          <section>
-            <h3 id="titulo-habilidades">Habilidades digitales</h3>
-            <div class="habi-digitales">
-                <p class="parrafohabi">Programación</p>
-                <div class="container-hab">
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/servidor-sql.png" alt="">
-                    <span class="title">SQL</span>
-                    <div class="skill-bar">
-                      <span class="skill-per html">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/html.png" alt="">
-                    <span class="title">HTML</span>
-                    <div class="skill-bar">
-                      <span class="skill-per html">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/css.png" alt="">
-                    <span class="title">CSS</span>
-                
-                    <div class="skill-bar">
-                      <span class="skill-per scss">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/bootstrap.png" alt="">
-                    <span class="title">Bootstrap</span>
-                
-                    <div class="skill-bar">
-                      <span class="skill-per Boostrap">
-                        <span class="tooltip">50%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/js.png" alt="">
-                    <span class="title">JavaScript</span>
-                      <div class="skill-bar">
-                      <span class="skill-per JavaScript">
-                        <span class="tooltip">10%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/piton.png" alt="">
-                    <span class="title">Phyton</span>
-                      <div class="skill-bar">
-                      <span class="skill-per Phyton">
-                        <p class="tooltip">10%</p>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/php.png" alt="">
-                    <span class="title">PHP</span>
-                      <div class="skill-bar">
-                      <span class="skill-per PHP">
-                        <span class="tooltip">30%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/java.png" alt="">
-                    <span class="title">JAVA</span>
-                      <div class="skill-bar">
-                      <span class="skill-per JAVA">
-                        <span class="tooltip">10%</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <p class="parrafohabil">Programas y plataformas</p>
-                <div class="container-hab">
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/acceso.png" alt="">
-                    <span class="title">Microsoft Access</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Access">
-                        <span class="tooltip">20%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/editor.png" alt="">
-                    <span class="title">Microsoft Publisher</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Publisher">
-                        <span class="tooltip">10%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/equipos.png" alt="">
-                    <span class="title">Microsoft Teams</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Teams">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/palabra (1).png" alt="">
-                    <span class="title">Microsoft Word</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Word">
-                        <span class="tooltip">80%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/powerpoint (1).png" alt="">
-                    <span class="title">Microsoft PowerPoint</span>
-                    <div class="skill-bar">
-                      <span class="skill-per PowerPoint">
-                        <span class="tooltip">80%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/sobresalir (1).png" alt="">
-                    <span class="title">Microsoft Excel</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Excel">
-                        <span class="tooltip">80%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/proyecto.png" alt="">
-                    <span class="title">Microsoft Project</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Project">
-                        <span class="tooltip">20%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/una-nota.png" alt="">
-                    <span class="title">Microsoft OneNote</span>
-                    <div class="skill-bar">
-                      <span class="skill-per OneNote">
-                        <span class="tooltip">30%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/una-unidad.png" alt="">
-                    <span class="title">Microsoft OneDrive</span>
-                    <div class="skill-bar">
-                      <span class="skill-per OneDrive">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/panorama.png" alt="">
-                    <span class="title">Microsoft Outlook</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Outlook">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/Iconos/gmail1.png" alt="">
-                    <span class="title">Gmail</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Gmail">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/google-drive (1).png" alt="">
-                    <span class="title">Google Drive</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Drive">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/adwords (1).png" alt="">
-                    <span class="title">Google Ads</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Ads">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/data-analytics.png" alt="">
-                    <span class="title">Google Analytics</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Analytics">
-                        <span class="tooltip">40%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/figma.png" alt="">
-                    <span class="title">Figma</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Figma">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/ilustrador (1).png" alt="">
-                    <span class="title">Adobe Illustrator</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Illustrator">
-                        <span class="tooltip">40%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/photoshop (1).png" alt="">
-                    <span class="title">Adobe Photoshop</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Photoshop">
-                        <span class="tooltip">30%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="../assets/images/Iconos/trello.png" alt="">
-                    <span class="title">Trello</span>
-                    <div class="skill-bar">
-                      <span class="skill-per Trello">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
+    <hr class="barra-hab" />
+    <main>
+      <section>
+        <h3 id="titulo-habilidades">Habilidades digitales</h3>
+        <p class="parrafohabi">Programación</p>
+        <div class="container-hab">
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/servidor-sql.png" alt="" />
+            <span class="title">SQL</span>
+            <div class="skill-bar">
+              <span class="skill-per html">
+                <span class="tooltip">70%</span>
+              </span>
             </div>
-          </section>
-        </div>
-        <div class="col-lg-6">
-          <section>
-            <h3 id="titulo-habilidades">Habilidades sociales</h3>
-            <div class="hab-sociales">
-                <p class="parrafohabi">Idiomas</p>
-                <div class="container-hab">
-                  <div class="skill-box">
-                    <img src="/src/assets/images/Iconos/espana.png" alt="">
-                    <span class="title">Español</span>
-                    <div class="skill-bar">
-                      <span class="skill-per esp">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="/images/Iconos/estados-unidos.png" alt="">
-                    <span class="title">Ingles</span>
-                    <div class="skill-bar">
-                      <span class="skill-per ing">
-                        <span class="tooltip">40%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <img src="./images/Iconos/brasil.png" alt="">
-                    <span class="title">Portúgues</span>
-                    <div class="skill-bar">
-                      <span class="skill-per por">
-                        <span class="tooltip">10%</span>
-                      </span>
-                    </div>
-                  </div>
-                </div> 
-                <p class="parrafohabil">Blandas</p>
-                <div class="container-hab">
-                  <div class="skill-box">
-                    <span class="title">Comunicación verbal</span>
-                    <div class="skill-bar">
-                      <span class="skill-per verbal">
-                        <span class="tooltip">50%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Comunicación no verbal</span>
-                    <div class="skill-bar">
-                      <span class="skill-per noverbal">
-                        <span class="tooltip">80%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de empatía</span>
-                    <div class="skill-bar">
-                      <span class="skill-per empatía">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de resolución de conflictos</span>
-                    <div class="skill-bar">
-                      <span class="skill-per resolución">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de trabajo en equipo</span>
-                    <div class="skill-bar">
-                      <span class="skill-per trabajo">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de asertividad</span>
-                    <div class="skill-bar">
-                      <span class="skill-per asertividad">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de manejo de relaciones</span>
-                    <div class="skill-bar">
-                      <span class="skill-per manejo">
-                        <span class="tooltip">70%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de negociación</span>
-                    <div class="skill-bar">
-                      <span class="skill-per negociación">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de persuasión</span>
-                    <div class="skill-bar">
-                      <span class="skill-per persuasión">
-                        <span class="tooltip">80%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de escucha activa</span>
-                    <div class="skill-bar">
-                      <span class="skill-per escucha">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de autocontrol emocional</span>
-                    <div class="skill-bar">
-                      <span class="skill-per autocontrol">
-                        <span class="tooltip">60%</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <span class="title">Habilidades de adaptabilidad</span>
-                    <div class="skill-bar">
-                      <span class="skill-per adaptabilidad">
-                        <span class="tooltip">90%</span>
-                      </span>
-                    </div>
-                  </div>
-                </div> 
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/html.png" alt="" />
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+              <span class="skill-per html">
+                <span class="tooltip">70%</span>
+              </span>
             </div>
-          </section>
+          </div>
+
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/css.png" alt="" />
+            <span class="title">CSS</span>
+
+            <div class="skill-bar">
+              <span class="skill-per scss">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/bootstrap.png" alt="" />
+            <span class="title">Bootstrap</span>
+
+            <div class="skill-bar">
+              <span class="skill-per Boostrap">
+                <span class="tooltip">50%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/js.png" alt="" />
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+              <span class="skill-per JavaScript">
+                <span class="tooltip">10%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/piton.png" alt="" />
+            <span class="title">Phyton</span>
+            <div class="skill-bar">
+              <span class="skill-per Phyton">
+                <p class="tooltip">10%</p>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/php.png" alt="" />
+            <span class="title">PHP</span>
+            <div class="skill-bar">
+              <span class="skill-per PHP">
+                <span class="tooltip">30%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/java.png" alt="" />
+            <span class="title">JAVA</span>
+            <div class="skill-bar">
+              <span class="skill-per JAVA">
+                <span class="tooltip">10%</span>
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
-      </section>          
+        <p class="parrafohabil">Programas y plataformas</p>
+        <div class="container-hab">
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/acceso.png" alt="" />
+            <span class="title">Microsoft Access</span>
+            <div class="skill-bar">
+              <span class="skill-per Access">
+                <span class="tooltip">20%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/editor.png" alt="" />
+            <span class="title">Microsoft Publisher</span>
+            <div class="skill-bar">
+              <span class="skill-per Publisher">
+                <span class="tooltip">10%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/equipos.png" alt="" />
+            <span class="title">Microsoft Teams</span>
+            <div class="skill-bar">
+              <span class="skill-per Teams">
+                <span class="tooltip">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/palabra (1).png" alt="" />
+            <span class="title">Microsoft Word</span>
+            <div class="skill-bar">
+              <span class="skill-per Word">
+                <span class="tooltip">80%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/powerpoint (1).png" alt="" />
+            <span class="title">Microsoft PowerPoint</span>
+            <div class="skill-bar">
+              <span class="skill-per PowerPoint">
+                <span class="tooltip">80%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/sobresalir (1).png" alt="" />
+            <span class="title">Microsoft Excel</span>
+            <div class="skill-bar">
+              <span class="skill-per Excel">
+                <span class="tooltip">80%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/proyecto.png" alt="" />
+            <span class="title">Microsoft Project</span>
+            <div class="skill-bar">
+              <span class="skill-per Project">
+                <span class="tooltip">20%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/una-nota.png" alt="" />
+            <span class="title">Microsoft OneNote</span>
+            <div class="skill-bar">
+              <span class="skill-per OneNote">
+                <span class="tooltip">30%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/una-unidad.png" alt="" />
+            <span class="title">Microsoft OneDrive</span>
+            <div class="skill-bar">
+              <span class="skill-per OneDrive">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/panorama.png" alt="" />
+            <span class="title">Microsoft Outlook</span>
+            <div class="skill-bar">
+              <span class="skill-per Outlook">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/Iconos/gmail1.png" alt="" />
+            <span class="title">Gmail</span>
+            <div class="skill-bar">
+              <span class="skill-per Gmail">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/google-drive (1).png" alt="" />
+            <span class="title">Google Drive</span>
+            <div class="skill-bar">
+              <span class="skill-per Drive">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/adwords (1).png" alt="" />
+            <span class="title">Google Ads</span>
+            <div class="skill-bar">
+              <span class="skill-per Ads">
+                <span class="tooltip">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/data-analytics.png" alt="" />
+            <span class="title">Google Analytics</span>
+            <div class="skill-bar">
+              <span class="skill-per Analytics">
+                <span class="tooltip">40%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/figma.png" alt="" />
+            <span class="title">Figma</span>
+            <div class="skill-bar">
+              <span class="skill-per Figma">
+                <span class="tooltip">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/ilustrador (1).png" alt="" />
+            <span class="title">Adobe Illustrator</span>
+            <div class="skill-bar">
+              <span class="skill-per Illustrator">
+                <span class="tooltip">40%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/photoshop (1).png" alt="" />
+            <span class="title">Adobe Photoshop</span>
+            <div class="skill-bar">
+              <span class="skill-per Photoshop">
+                <span class="tooltip">30%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/trello.png" alt="" />
+            <span class="title">Trello</span>
+            <div class="skill-bar">
+              <span class="skill-per Trello">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 id="titulo-habilidades">Habilidades sociales</h3>
+        <p class="parrafohabi">Idiomas</p>
+        <div class="container-hab">
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/espana.png" alt="" />
+            <span class="title">Español</span>
+            <div class="skill-bar">
+              <span class="skill-per esp">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/estados-unidos.png" alt="" />
+            <span class="title">Ingles</span>
+            <div class="skill-bar">
+              <span class="skill-per ing">
+                <span class="tooltip">40%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <img src="../assets/images/Iconos/brasil.png" alt="" />
+            <span class="title">Portúgues</span>
+            <div class="skill-bar">
+              <span class="skill-per por">
+                <span class="tooltip">10%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="parrafohabil">Blandas</p>
+        <div class="container-hab">
+          <div class="skill-box">
+            <span class="title">Comunicación verbal</span>
+            <div class="skill-bar">
+              <span class="skill-per verbal">
+                <span class="tooltip">50%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Comunicación no verbal</span>
+            <div class="skill-bar">
+              <span class="skill-per noverbal">
+                <span class="tooltip">80%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de empatía</span>
+            <div class="skill-bar">
+              <span class="skill-per empatía">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de resolución de conflictos</span>
+            <div class="skill-bar">
+              <span class="skill-per resolución">
+                <span class="tooltip">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de trabajo en equipo</span>
+            <div class="skill-bar">
+              <span class="skill-per trabajo">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de asertividad</span>
+            <div class="skill-bar">
+              <span class="skill-per asertividad">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de manejo de relaciones</span>
+            <div class="skill-bar">
+              <span class="skill-per manejo">
+                <span class="tooltip">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de negociación</span>
+            <div class="skill-bar">
+              <span class="skill-per negociación">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de persuasión</span>
+            <div class="skill-bar">
+              <span class="skill-per persuasión">
+                <span class="tooltip">80%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de escucha activa</span>
+            <div class="skill-bar">
+              <span class="skill-per escucha">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de autocontrol emocional</span>
+            <div class="skill-bar">
+              <span class="skill-per autocontrol">
+                <span class="tooltip">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">Habilidades de adaptabilidad</span>
+            <div class="skill-bar">
+              <span class="skill-per adaptabilidad">
+                <span class="tooltip">90%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <hr class="barra-hab">
-  <!-- Sección del footer -->
-  <footer id="contactos">
-    <div class="container enlaces-footer">
-              <a class="logo1" href="https://www.facebook.com/todocomienza.erickhernandez/"><img src="../assets/images/Iconos/Facebook.png" alt="Facebook"></a>
-              <a class="logo2" href="https://www.instagram.com/erck.hernandez/"><img src="../assets/images/Iconos/Instagram.png" alt="Instagram"></a>
-              <a class="logo3" href="https://www.tiktok.com/@erickhdz9628"><img src="../assets/images/Iconos/Tik-tok.png" alt="Tik-tok"></a>
-              <a class="logo4" href="https://wa.me/573022016072"><img src="../assets/images/Iconos/Whatsapp.png" alt="Whatsapp"></a>
-              <a class="logo5" href="https://www.linkedin.com/in/erick-hernandez-a9b6aa207/"><img src="../assets/images/Iconos/Linkedin.png" alt="linkedin"></a>
-              <a class="logo6" href="https://github.com/Erick28Hdz"><img src="../assets/images/Iconos/Github.png" alt="GitHub"></a>
-      </div> 
-    <div class="container informacion-footer">    
-      <p class="infofooter">Comunícate</p>
-      <img src="../assets/images/perfil/firma.png" alt="" class="firma" download="none">  
-      <p class="año">2024</p>
-    </div>          
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <hr class="barra-hab" />
+    <!-- Sección del footer -->
+    <footer id="contactos">
+      <div class="container enlaces-footer">
+        <a
+          class="logo1"
+          href="https://www.facebook.com/todocomienza.erickhernandez/"
+          ><img src="../assets/images/Iconos/Facebook.png" alt="Facebook"
+        /></a>
+        <a class="logo2" href="https://www.instagram.com/erck.hernandez/"
+          ><img src="../assets/images/Iconos/Instagram.png" alt="Instagram"
+        /></a>
+        <a class="logo3" href="https://www.tiktok.com/@erickhdz9628"
+          ><img src="../assets/images/Iconos/Tik-tok.png" alt="Tik-tok"
+        /></a>
+        <a class="logo4" href="https://wa.me/573022016072"
+          ><img src="../assets/images/Iconos/Whatsapp.png" alt="Whatsapp"
+        /></a>
+        <a
+          class="logo5"
+          href="https://www.linkedin.com/in/erick-hernandez-a9b6aa207/"
+          ><img src="../assets/images/Iconos/Linkedin.png" alt="linkedin"
+        /></a>
+        <a class="logo6" href="https://github.com/Erick28Hdz"
+          ><img src="../assets/images/Iconos/Github.png" alt="GitHub"
+        /></a>
+      </div>
+      <div class="container informacion-footer">
+        <p class="infofooter">Comunícate</p>
+        <img
+          src="../assets/images/perfil/firma.png"
+          alt=""
+          class="firma"
+          download="none"
+        />
+        <p class="año">2024</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="MiPortafolio/src/js/main.js"></script> 
-</body>
+    <script src="MiPortafolio/src/js/main.js"></script>
+  </body>
 </html>
