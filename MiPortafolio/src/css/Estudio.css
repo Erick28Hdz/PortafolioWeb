@@ -131,8 +131,7 @@ header {
   font-family: var(--letra-principal);
   font-size: var(--titulos);
   color: var(--color-background);
-  margin-top: 60px;
-  padding: 20px;
+  margin-top: 5rem;
   text-shadow: 1.5px 2px 2px var(--color-primary);
   letter-spacing: 10px;
 }
