@@ -125,10 +125,11 @@ main {
 }
 
 #habilidades-profesionales:hover {
+  text-align: center;
   font-family: var(--letra-principal);
   font-size: var(--titulos);
   color: var(--color-accent);
-  margin: 20px;
+  margin-top: 5rem;
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
 

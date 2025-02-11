@@ -1,35 +1,35 @@
 :root {
-    --color-primary: #eeeeee;
-    --color-secondary: #000;
-    --color-accent: #4e4feb;
-    --color-background: #068fff;
-    --titulos: 40px;
-    --parrafos: 16px;
-    --Textos: 14px;
-    --subtitulos: 24px;
-    --anuncios: 16px;
-    --botones: 18px;
-    --letra-botones: "Black Ops One", cursive;
-    --letra-subtitulos: "Raleway", sans-serif;
-    --letra-textos: "Montserrat", sans-serif;
-    --letra-anuncios: "Titillium Web", sans-serif;
-    --letra-titulos: "Roboto", sans-serif;
-    --letra-enlaces: "Exo 2", sans-serif;
-    --letra-principal: "New Rocker", cursive;
-  }
-  
-  body {
-    background-color: var(--color-secondary);
-    padding: 0px;
-  }
+  --color-primary: #eeeeee;
+  --color-secondary: #000;
+  --color-accent: #4e4feb;
+  --color-background: #068fff;
+  --titulos: 40px;
+  --parrafos: 16px;
+  --Textos: 14px;
+  --subtitulos: 24px;
+  --anuncios: 16px;
+  --botones: 18px;
+  --letra-botones: "Black Ops One", cursive;
+  --letra-subtitulos: "Raleway", sans-serif;
+  --letra-textos: "Montserrat", sans-serif;
+  --letra-anuncios: "Titillium Web", sans-serif;
+  --letra-titulos: "Roboto", sans-serif;
+  --letra-enlaces: "Exo 2", sans-serif;
+  --letra-principal: "New Rocker", cursive;
+}
 
-  /*Header*/
-  header{
-    background-color: var(--color-secondary);
-    padding: 0px;
-  }
+body {
+  background-color: var(--color-secondary);
+  padding: 0px;
+}
 
-  /*Barra de navegación principal*/
+/*Header*/
+header {
+  background-color: var(--color-secondary);
+  padding: 0px;
+}
+
+/*Barra de navegación principal*/
 .container-nav {
   padding-left: 10px;
   padding-right: 10px;
@@ -91,7 +91,7 @@
   font-size: 18px;
   max-width: 95%;
 }
-  /*Menu*/
+/*Menu*/
 .menu-principal {
   width: 100%;
   height: auto;
@@ -100,6 +100,10 @@
   margin: 0 auto;
 }
 
+.secciones-experiencia, .secciones-experiencia2, .secciones-experiencia3{
+  margin: 25px 0px;
+  padding: 10px 0px;
+}
 .barra-exp {
   width: 95%;
   border: 3px solid var(--color-primary);
@@ -122,96 +126,95 @@
 }
 
 #Experiencia-laboral:hover {
+  text-align: center;
   font-family: var(--letra-principal);
   font-size: var(--titulos);
   color: var(--color-accent);
-  margin: 20px;
+  margin-top: 5rem;
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
 
-.contenedor-experiencia {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  background-color: var(--color-secondary);
-  border-color: 2px solid var(--color-primary);
-  border-radius: 15px;
-  box-shadow: 0px 2px 30px var(--color-background);
-  width: 90%;
-  height: 100%;
-  margin: 15px auto;
-  padding: 10px;
+#titulocontratos, #titulofreelance, #tituloindependiente {
+  text-align: center;
+  font-size: var(--titulos);
+  color: var(--color-primary);
+  font-family: var(--letra-titulos);
+  text-shadow: 2px 4px 3px var(--color-background);
+  margin: 20px 0px;
 }
 
 .Experiencia {
-  width: 95%;
+  width: 90%;
+  height: 30rem;
   display: flex;
-  flex-direction: column;
-  border: 2px var(--color-secondary) solid;
-  border-radius: 2px;
-  box-shadow: 0px 5px 15px var(--color-accent);
-  background-color: var(--color-primary);
-  padding: 10px;
-  margin: 15px auto;
-  align-items: center;
-}
-
-.cartas-col-12 {
+  background-color: transparent;
+  padding: 10px 30px;
   margin: 0 auto;
-  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: var(--color-background) var(--color-secondary);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to left,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 
-.contratos {
+.contenedor-cards {
   display: flex;
-  width: 100%;
-  height: 80vh;
-  justify-content: center;
-}
-
-#titulocontratos {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  text-decoration: none;
-  text-align: center;
-  margin: 15px;
-}
-.sec-contr {
-  display: flex;
-  width: 100%;
-}
-
-.row-cartas {
-  width: 27%;
+  margin: 0px 50px;
+  gap: 5rem;
 }
 .card {
   background-color: var(--color-secondary);
-  width: 100%;
-  margin: 10px;
-  border-radius: 5px;
+  align-self: center;
+  min-width: 350px;
+  height: 25rem;
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative; /* Necesario para que el pseudo-elemento funcione */
 }
 
-.card-body {
-  background-color: var(--color-accent);
-  padding: 10px;
-  margin: 2px;
+.card::before {
+  content: ""; /* Asegúrate de agregar el contenido vacío */
+  position: absolute;
+  top: -8px; /* Ajuste de la posición para hacer que la sombra se vea */
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1; /* Para que quede detrás del contenido */
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  border-radius: 15px; /* Debe coincidir con el border-radius del contenedor */
+  filter: blur(10px); /* Efecto de desenfoque para simular la sombra */
+  opacity: 0.7; /* Ajusta la opacidad para darle un aspecto de sombra */
 }
 
 .card-title {
+  color: var(--color-background);
   font-family: var(--letra-botones);
   font-size: var(--subtitulos);
 }
+
 .card-subtitle {
   font-family: var(--letra-subtitulos);
   font-size: var(--botones);
-  color: var(--color-primary) !important;
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .card-text {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: var(--letra-textos);
   font-size: var(--parrafos);
 }
@@ -219,34 +222,21 @@
 .card-fecha,
 .parrafolugar,
 .parrafoexpe {
+  color: var(--color-accent);
   font-family: var(--letra-textos);
   font-size: var(--Textos);
+  font-weight: 600;
 }
 
-#titulofreelance {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  text-decoration: none;
-  text-align: center;
-  margin: 15px;
-}
+
+
 .Freelance {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
-#tituloindependiente {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  text-decoration: none;
-  text-align: center;
-  margin: 15px;
-}
+
 
 .Independiente {
   display: flex;
@@ -254,7 +244,7 @@
   justify-content: space-evenly;
 }
 
-.Experiencia .parrafoexp {
+.parrafoexp {
   color: var(--color-primary);
   font-size: var(--parrafos);
   text-align: end;
@@ -286,106 +276,106 @@
 
 /* Footer */
 #contactos {
-    width: 100%;
-    overflow: hidden;
-    background: var(--color-secondary);
-    padding: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  
-  #contactos:hover {
-    background-color: var(--color-background);
-    color: var(--color-secondary);
-    box-shadow: 0px -5px 10px var(--color-primary);
-    overflow-x: hidden;
-  }
-  
-  .enlaces-footer {
-    width: 30%;
-    font-family: var(--letra-enlaces);
-    font-size: var(--parrafos);
-    text-decoration: none;
-    margin: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 7px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .enlaces-footer img {
-    width: 100%;
-  }
-  
-  .logo1:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 4px 1px #3b5998;
-  }
-  
-  .logo2:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 4px 1px #833ab4;
-  }
-  
-  .logo3:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 4px 1px #ff0050;
-  }
-  
-  .logo4:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 3px 1px #2bb741;
-  }
-  
-  .logo5:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 1px 1px #0e76a8;
-  }
-  
-  .logo6:hover {
-    transform: scale(1.2);
-    border-radius: 7px;
-    box-shadow: 3px 5px 4px 1px #171515;
-  }
-  
-  .enlaces img {
-    max-width: 50px;
-    display: flex;
-    transition: filter 0.3s;
-  }
-  
-  .enlaces img:hover {
-    filter: brightness(70%);
-  }
-  
-  .informacion-footer {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .informacion-footer .infofooter {
-    text-decoration: none;
-    font-family: var(--letra-principal);
-    font-size: var(--subtitulos);
-    color: var(--color-secondary);
-  }
-  
-  .informacion-footer img {
-    width: 20%;
-    margin: 0 auto;
-  }
-  
-  .año {
-    font-family: var(--letra-principal);
-    font-size: var(--subtitulos);
-  }
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-secondary);
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#contactos:hover {
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+  box-shadow: 0px -5px 10px var(--color-primary);
+  overflow-x: hidden;
+}
+
+.enlaces-footer {
+  width: 30%;
+  font-family: var(--letra-enlaces);
+  font-size: var(--parrafos);
+  text-decoration: none;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.enlaces-footer img {
+  width: 100%;
+}
+
+.logo1:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 4px 1px #3b5998;
+}
+
+.logo2:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 4px 1px #833ab4;
+}
+
+.logo3:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 4px 1px #ff0050;
+}
+
+.logo4:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 3px 1px #2bb741;
+}
+
+.logo5:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 1px 1px #0e76a8;
+}
+
+.logo6:hover {
+  transform: scale(1.2);
+  border-radius: 7px;
+  box-shadow: 3px 5px 4px 1px #171515;
+}
+
+.enlaces img {
+  max-width: 50px;
+  display: flex;
+  transition: filter 0.3s;
+}
+
+.enlaces img:hover {
+  filter: brightness(70%);
+}
+
+.informacion-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.informacion-footer .infofooter {
+  text-decoration: none;
+  font-family: var(--letra-principal);
+  font-size: var(--subtitulos);
+  color: var(--color-secondary);
+}
+
+.informacion-footer img {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.año {
+  font-family: var(--letra-principal);
+  font-size: var(--subtitulos);
+}
