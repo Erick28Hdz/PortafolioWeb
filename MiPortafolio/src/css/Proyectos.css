@@ -129,160 +129,131 @@
   margin-top: 5rem;
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
-
-.contenedor-proyectos {
-  justify-content: center;
+/* Sección 3 Reseñas y experiencias*/
+.seccion-terminados, .seccion-proceso{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  background-color: var(--color-secondary);
-  border-color: 2px solid var(--color-primary);
-  border-radius: 15px;
-  box-shadow: 0px 2px 30px var(--color-background);
+  justify-content: space-between;
   width: 90%;
-  height: 100%;
-  margin: 15px auto;
-  padding: 10px;
+  height: 34rem;
+  padding: 10px 30px;
+  margin: 0 auto;
+  overflow: auto;
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: var(--color-background) var(--color-secondary);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to left,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 
-.Proyectos {
-  width: 95%;
+.seccion-tarjetas{
+  display: flex;
+  margin: 25px 20px;
+  gap: 2rem;
+}
+
+.tarjetareseñas {
+  position: relative;
+  min-width: 330px;
+  min-height: 470px;
+  margin: 0px 20px;
+  background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 2px var(--color-secondary) solid;
-  border-radius: 5px;
-  box-shadow: 0px 5px 15px var(--color-accent);
-  background-color: var(--color-primary);
+  justify-content: space-around;
   padding: 10px;
-  margin-top: 15px;
-  margin: 10px auto;
+  border-radius: 8px;
+  color: var(--color-primary);
+}
+
+.tarjetareseñas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 340px;
+  min-height: 480px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tarjetareseñas::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.tarjetareseñas:hover::after {
+  filter: blur(30px);
 }
 
 /*Imagenes del contenedor de proyectos*/
-.card-img-top {
-  border-radius: 10px;
-  border: solid 1px var(--color-primary);
+.tarjetareseñas img {
+  margin: 0 auto;
+  max-width: 14rem;
+  background-color: transparent;
+  border-radius: 5px;
   box-shadow: 0px 5px 15px var(--color-secondary);
 }
 
-#tituloterminados {
+.tarjetareseñas h5{
   font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 5px;
-  text-decoration: none;
-  margin: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.Terminados {
+.tarjetareseñas p{
+  width: 100%;
+  margin: 0 auto;
+  text-align: start;
+  font-family: var(--letra-textos);
+  font-size: var(--Textos);
+}
+
+.clase-proyecto{
+  color: var(--color-background);
+  padding-left: 15px;
+}
+.card-text {
   display: flex;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.terminados {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.cardpapa {
-  background-color: var(--color-accent);
-  width: 30%;
-  border: solid 2px var(--color-secondary);
-  border-radius: 10px;
-  justify-items: center;
-}
-
-#tituloproceso {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 5px;
-  text-decoration: none;
-  margin: 20px;
-}
-.Proceso {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.Proceso-col-12 {
-  margin: 0 auto;
-  justify-content: center;
-  width: 30%;
-  border: solid 2px var(--color-secondary);
-  border-radius: 10px;
-}
-
-.cardproceso {
-  background-color: var(--color-accent);
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-  justify-items: center;
-}
-
-#tituloinvestigacion {
-  font-size: var(--subtitulos);
-  color: var(--color-secondary);
-  font-family: var(--letra-titulos);
-  text-shadow: 2px 4px 3px var(--color-background);
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 5px;
-  text-decoration: none;
-  margin: 20px;
-}
-
-.investigacion {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.cardinvest {
-  background-color: var(--color-accent);
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-  justify-items: center;
-}
-
-.tarjeta {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.tarjeta-col-12 {
-  margin: 0 auto;
-  justify-content: center;
-  width: 30%;
-  border: solid 2px var(--color-secondary);
-  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .enlaces {
-  font-family: var(--letra-enlaces);
-  font-size: var(--parrafos);
-  color: var(--color-primary);
+  align-self: flex-end;
   text-decoration: none;
+  color: var(--color-accent);
+  padding-right: 10px;
+}
+
+.enlaces:hover{
+  color: var(--color-background);
+}
+#tituloterminados, #tituloproceso, #tituloinvestigacion  {
+  text-align: center;
+    font-size: var(--titulos);
+    color: var(--color-primary);
+    font-family: var(--letra-titulos);
+    text-shadow: 2px 4px 3px var(--color-background);
+    margin: 20px 0px;
 }
 
 /* Footer */
