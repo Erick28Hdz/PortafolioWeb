@@ -141,7 +141,7 @@ main {
   margin: 25px;
 }
 
-.secciones-habilidades {
+.secciones-habilidades, .secciones-habilidades2 {
   width: 90%;
   margin: auto;
   display: flex;
@@ -150,7 +150,7 @@ main {
   
 }
 
-.contenedor-habilidades {
+.contenedor-habilidades, .contenedor-habilidades2 {
   width: 100%;
   margin: 40px 0px;
   display: flex;
@@ -233,7 +233,7 @@ main {
 }
 
 /*Fin del nav de las secciones*/
-.container-hab {
+.container-hab, .container-hab2 {
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -247,7 +247,7 @@ main {
   position: relative;
 }
 
-.container-hab::before {
+.container-hab::before, .container-hab2::before {
   content: ""; /* Asegúrate de agregar el contenido vacío */
   position: absolute;
   top: -8px; /* Ajuste de la posición para hacer que la sombra se vea */
@@ -261,7 +261,7 @@ main {
   opacity: 1.7; /* Ajusta la opacidad para darle un aspecto de sombra */
 }
 
-.imagen-contenedor img {
+.imagen-contenedor img, .imagen-contenedor2 img {
   width: 400px;
   height: auto;
   filter: brightness(80%) contrast(120%);
@@ -296,7 +296,7 @@ main {
   margin: 20px 0px;
 }
 
-.container-hab .skill-box {
+.container-hab .skill-box, .container-hab2 .skill-box {
   width: 100%;
   margin: 15px 0;
   padding: 0px 10px;
