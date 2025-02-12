@@ -660,7 +660,7 @@ b {
 
 .nav-botones {
   background-color: var(--color-secondary);
-  width: 70%;
+  width: auto;
   height: auto;
   display: flex;
   align-items: center;
