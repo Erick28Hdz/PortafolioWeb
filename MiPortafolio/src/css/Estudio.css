@@ -233,18 +233,17 @@ header {
 .gallery-3,
 .gallery-4 {
   margin: auto;
+  width: 60%;
 }
 
 .gallery-container,
 .gallery-container-2,
 .gallery-container-3,
 .gallery-container-4 {
-  align-items: center;
   display: flex;
   height: 310px;
-  width: 64%;
+  width: 50%;
   margin: 0 auto;
-  max-width: 1000px;
   position: relative;
 }
 
@@ -455,10 +454,10 @@ header {
 
 /*Bloqie de cursos cortos*/
 .sec-cursos {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
-  padding: 20px 10px;
+  padding: 20px 30px;
   align-items: flex-start;
 }
 
