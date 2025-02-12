@@ -146,4 +146,6 @@ loadGallery2().then(galleryItems => {
   exampleCarousel2 = new Carousel2(galleryContainer2, galleryItems, galleryControls2);
   exampleCarousel2.setControls();
   exampleCarousel2.useControls();
+
+  categoryElements[0].click();
 });

@@ -152,4 +152,6 @@ loadGallery().then(galleryItems => {
   exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
   exampleCarousel.setControls();
   exampleCarousel.useControls();
+
+  categoryElements[0].click();
 });
