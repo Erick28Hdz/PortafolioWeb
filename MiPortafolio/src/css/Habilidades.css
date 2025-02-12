@@ -133,7 +133,7 @@ main {
   text-shadow: 1.5px 2px 1px var(--color-primary);
 }
 
-#titulo-habilidades {
+.titulo-habilidades {
   text-align: center;
   font-size: var(--titulos);
   color: var(--color-primary);
