@@ -18,6 +18,11 @@
   --letra-principal: "New Rocker", cursive;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--color-secondary);
   padding: 0px;
@@ -1007,4 +1012,173 @@ header {
 .año {
   font-family: var(--letra-principal);
   font-size: var(--subtitulos);
+}
+
+/* 🟢 **Responsive para móviles (320px - 480px)** */
+@media (min-width: 320px) and (max-width: 480px){
+  .navbar-title {
+    display: none;
+  }
+
+  #estudios-profesionales {
+    font-size: 30px;
+  }
+
+  #estudios-profesionales:hover {
+    font-size: 30px;
+  }
+
+  .sec-cursos{
+    flex-direction: column;
+  }
+
+  .carrera-profesional{
+    height: auto;
+  }
+  
+  .contenedor-estudio-carrera {
+    width: 94%;
+  }
+
+  .gallery{
+    width: 100px;
+    margin-top: 3rem;
+    order: 2;
+  }
+
+  .gallery-item,
+  .gallery-item2,
+  .gallery-item4,
+  .gallery-item3 {
+    height: 150px;
+    width: 200px;
+  }
+
+  .gallery-container,
+  .gallery-container-2,
+  .gallery-container-3,
+  .gallery-container-4 {
+    width: 100%;
+    height: 10rem;
+  }
+  .gallery-controls{
+    width: 100%;
+  }
+  .gallery-controls button{
+    font-size: 20px;
+    margin: 0px 5px; 
+    padding: 0px;
+  }
+
+  .gallery-controls-anterior::before,
+  .gallery-controls-siguiente::before {
+    padding: 6px;
+  }
+
+  .flechatras{
+    left: -3rem;
+  }
+
+  .flechadelante{
+    right: -3rem;
+  }
+  .sec-cursos{
+    width: 100%;
+    padding: 0;
+  }
+  .card-prueba{
+    width: 16rem;
+    margin: auto;
+  }
+
+  .card-prueba p {
+    font-size: 10px;
+  }
+
+  .sec-men-cur{
+    order: 1;
+  }
+
+  .enlaces-footer img {
+    width: 2rem;
+  }
+
+  .informacion-footer img {
+    width: 15rem;
+  }
+}
+
+/* 🟡 **Responsive para tablets (481px - 1024px)** */
+@media (min-width: 481px) and (max-width: 1024px){
+  .enlaces-footer img {
+    width: 3rem;
+  }
+
+  .informacion-footer img {
+    width: 18rem;
+  }
+
+  .contenedor-estudio-carrera {
+    width: 100%;
+  }
+
+  .sec-cursos{
+    flex-direction: column;
+  }
+  
+  .carrera-profesional{
+    height: auto;
+  }
+  
+  .contenedor-estudio-carrera {
+    width: 96%;
+  }
+
+  .gallery{
+    width: 100px;
+    margin-top: 3rem;
+    order: 2;
+  }
+
+  .gallery-item,
+  .gallery-item2,
+  .gallery-item4,
+  .gallery-item3 {
+    height: 220px;
+    width: 320px;
+  }
+
+  .gallery-container,
+  .gallery-container-2,
+  .gallery-container-3,
+  .gallery-container-4 {
+    width: 100%;
+    height: 14rem;
+  }
+  .gallery-controls{
+    width: 100%;
+  }
+  .gallery-controls button{
+    font-size: 20px;
+    margin: 0px 5px; 
+    padding: 0px;
+  }
+
+  .gallery-controls-anterior::before,
+  .gallery-controls-siguiente::before {
+    padding: 6px;
+  }
+
+  .flechatras{
+    left: -5rem;
+  }
+
+  .flechadelante{
+    right: -5rem;
+  }
+}
+
+/* 🔵 **Responsive para escritorios grandes (ajustes mínimos) */
+@media (min-width: 1025px){
+
 }
