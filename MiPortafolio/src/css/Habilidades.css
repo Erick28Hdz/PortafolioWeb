@@ -18,6 +18,11 @@
   --letra-principal: "New Rocker", cursive;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--color-secondary);
   padding: 0px;
@@ -453,4 +458,113 @@ main {
 .año {
   font-family: var(--letra-principal);
   font-size: var(--subtitulos);
+}
+
+/* 🟢 **Responsive para móviles (320px - 480px)** */
+@media (min-width: 320px) and (max-width: 480px){
+  .navbar-title {
+    display: none;
+  }
+
+  #habilidades-profesionales {
+    font-size: 30px;
+  }
+
+  #habilidades-profesionales:hover {
+    font-size: 30px;
+  }
+
+  .titulo-habilidades{
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .radio-inputs{
+    flex-direction: column;
+  }
+
+  .radio{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .imagen-contenedor img, .imagen-contenedor2 img{
+    width: 250px;
+    height: auto;
+  }
+
+  .contenedor-habilidades, .contenedor-habilidades2{
+    flex-direction: column;
+  }
+
+  .container-hab, .container-hab2{
+    width: 85%;
+    margin-top: 40px;
+  }
+
+  .skill-box{
+    flex-direction: column;
+  }
+  .skill-box img{
+    width: 50px;
+  }
+
+  .skill-box .title{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center
+  }
+  
+  .imagen-contenedor2{
+    order: 1;
+  }
+
+  .container-hab2{
+    order: 2;
+  }
+
+  .enlaces-footer img {
+    width: 2rem;
+  }
+
+  .informacion-footer img {
+    width: 15rem;
+  }
+}
+
+/* 🟡 **Responsive para tablets (481px - 1024px)** */
+@media (min-width: 481px) and (max-width: 1024px){
+  .radio{
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  .contenedor-habilidades, .contenedor-habilidades2{
+    flex-direction: column;
+  }
+
+  .container-hab, .container-hab2{
+    width: 85%;
+    margin-top: 40px;
+  }
+
+  .imagen-contenedor2{
+    order: 1;
+  }
+
+  .container-hab2{
+    order: 2;
+  }
+
+  .enlaces-footer img {
+    width: 3rem;
+  }
+
+  .informacion-footer img {
+    width: 18rem;
+  }
+}
+/* 🔵 **Responsive para escritorios grandes (ajustes mínimos) */
+@media (min-width: 1025px){
+
 }

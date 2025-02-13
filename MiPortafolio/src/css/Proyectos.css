@@ -18,6 +18,12 @@
     --letra-principal: "New Rocker", cursive;
   }
   
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
+
   body {
     background-color: var(--color-secondary);
     padding: 0px;
@@ -361,3 +367,60 @@
     font-family: var(--letra-principal);
     font-size: var(--subtitulos);
   }
+
+  /* 🟢 **Responsive para móviles (320px - 480px)** */
+@media (min-width: 320px) and (max-width: 480px){
+  .navbar-title {
+    display: none;
+  }
+
+  #titulo-proyectos{
+    font-size: 30px;
+  }
+
+  #titulo-proyectos:hover {
+    font-size: 30px;
+  }
+
+  #tituloterminados, #tituloproceso, #tituloinvestigacion {
+    font-size: 20px;
+  }
+
+  .tarjetareseñas {
+    justify-content: space-around;
+    min-width: 250px;
+    min-height: 0px;
+  }
+
+  .tarjetareseñas::before{
+    width: 260px;
+  }
+  .tarjetareseñas img {
+    max-width: 10rem;
+  }
+
+  .enlaces-footer img {
+    width: 2rem;
+  }
+
+  .informacion-footer img {
+    width: 15rem;
+  }
+}
+
+
+/* 🟡 **Responsive para tablets (481px - 1024px)** */
+@media (min-width: 481px) and (max-width: 1024px){
+  .enlaces-footer img {
+    width: 2rem;
+  }
+
+  .informacion-footer img {
+    width: 15rem;
+  }
+}
+
+/* 🔵 **Responsive para escritorios grandes (ajustes mínimos) */
+@media (min-width: 1025px){
+
+}

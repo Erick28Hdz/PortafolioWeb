@@ -1114,15 +1114,7 @@ header {
 
 /* 🟡 **Responsive para tablets (481px - 1024px)** */
 @media (min-width: 481px) and (max-width: 1024px){
-  .enlaces-footer img {
-    width: 3rem;
-  }
-
-  .informacion-footer img {
-    width: 18rem;
-  }
-
-  .sec-men-cur h3{
+   .sec-men-cur h3{
     font-size: 30px;
     width: 90%;
   }
@@ -1183,6 +1175,14 @@ header {
 
   .flechadelante{
     right: -5rem;
+  }
+
+  .enlaces-footer img {
+    width: 3rem;
+  }
+
+  .informacion-footer img {
+    width: 18rem;
   }
 }
 
