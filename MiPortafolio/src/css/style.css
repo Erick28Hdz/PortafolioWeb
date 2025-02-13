@@ -1256,14 +1256,26 @@ b {
   }
 
   .contenedor-descripcion{
-    max-width: 90%;
+    max-width: 50%;
+  }
+    
+  .contenedor-mapa{
+    width: 40%;
+    margin-top: 40px;
   }
 
   .cards .card{
-    width: 25rem;
+    width: auto;
     height: auto;
   }
 
+  .cards .card p.tip {
+    font-size: 20px;
+  }
+
+  .cards .card p.second-text {
+    font-size: 15px;
+  }
   .enlaces-footer img {
     width: 3rem;
   }
