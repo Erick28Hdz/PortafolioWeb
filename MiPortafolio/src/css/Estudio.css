@@ -1028,6 +1028,10 @@ header {
     font-size: 30px;
   }
 
+  .sec-men-cur h3{
+    font-size: 20px;
+    width: 90%;
+  }
   .sec-cursos{
     flex-direction: column;
   }
@@ -1118,6 +1122,10 @@ header {
     width: 18rem;
   }
 
+  .sec-men-cur h3{
+    font-size: 30px;
+    width: 90%;
+  }
   .contenedor-estudio-carrera {
     width: 100%;
   }
@@ -1144,8 +1152,8 @@ header {
   .gallery-item2,
   .gallery-item4,
   .gallery-item3 {
-    height: 220px;
-    width: 320px;
+    height: 300px;
+    width: 420px;
   }
 
   .gallery-container,
@@ -1153,20 +1161,20 @@ header {
   .gallery-container-3,
   .gallery-container-4 {
     width: 100%;
-    height: 14rem;
+    height: 19rem;
   }
   .gallery-controls{
     width: 100%;
   }
   .gallery-controls button{
-    font-size: 20px;
-    margin: 0px 5px; 
+    font-size: 25px;
+    margin: 0px 25px; 
     padding: 0px;
   }
 
   .gallery-controls-anterior::before,
   .gallery-controls-siguiente::before {
-    padding: 6px;
+    padding: 7px;
   }
 
   .flechatras{
